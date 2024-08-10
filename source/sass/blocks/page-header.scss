@@ -15,16 +15,45 @@
 
     inset: 0;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--primary);
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.5s ease;
+  }
+
+  &.is-open::after {
+    opacity: 0.6;
+    transform: scale(1);
+  }
 }
 
 .page-header__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  align-items: center;
   padding-top: 15px;
   padding-bottom: 6px;
 
-  gap: 9px 15px;
+  gap: 9px 100px;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+    padding-top: 19px;
+    padding-bottom: 19px;
+
+    gap: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .page-header__burger-button {
@@ -32,6 +61,12 @@
 
   margin-top: -10px;
   margin-left: -10px;
+
+  @media (min-width: $vp-768) {
+    margin-top: -2px;
+
+    justify-self: start;
+  }
 }
 
 .page-header__logo {
@@ -39,6 +74,12 @@
 
   max-width: 170px;
   margin-left: auto;
+
+  @media (min-width: $vp-768) {
+    margin-left: 0;
+
+    justify-self: center;
+  }
 }
 
 .page-header__phone {
@@ -51,6 +92,11 @@
   line-height: 14px;
   color: var(--white-100);
   text-decoration: none;
+
+  @media (min-width: $vp-768) {
+    margin-top: 3px;
+    justify-self: end;
+  }
 
   &:hover {
     color: var(--white-50);
@@ -74,7 +120,7 @@
   top: calc(100% - 1px);
   right: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
 
   padding: 13px 15px 47px 10px;
 
@@ -82,6 +128,10 @@
   transform: translateY(-150%);
 
   transition: transform 0.6s ease;
+
+  @media (min-width: $vp-768) {
+    padding: 28px 40px 66px 40px;
+  }
 
   .is-open & {
     transform: translateY(0%);
@@ -96,6 +146,10 @@
   list-style-type: none;
 
   gap: 16px;
+
+  @media (min-width: $vp-768) {
+    gap: 18px;
+  }
 }
 
 .page-header__link {
@@ -109,7 +163,9 @@
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.04em;
+
   outline: 1px solid transparent;
+
   transition: outline 0.6s ease;
 
   &:focus {
@@ -120,7 +176,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
 
     width: 100%;
