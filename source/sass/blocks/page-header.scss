@@ -14,6 +14,10 @@
     background-color: var(--additional-100);
 
     inset: 0;
+
+    @media (min-width: $vp-1440) {
+      display: none;
+    }
   }
 
   &::after {
@@ -25,14 +29,19 @@
     height: 100vh;
 
     background-color: var(--primary);
-    opacity: 0;
     transform: scale(0);
+    opacity: 0;
+
     transition: opacity 0.5s ease;
+
+    @media (min-width: $vp-1440) {
+      display: none;
+    }
   }
 
   &.is-open::after {
-    opacity: 0.6;
     transform: scale(1);
+    opacity: 0.6;
   }
 }
 
@@ -52,7 +61,14 @@
     padding-bottom: 19px;
 
     gap: 0;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 174px 1fr 174px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding-top: 31px;
+    padding-bottom: 31px;
+
+    gap: 7px 100px;
   }
 }
 
@@ -67,6 +83,10 @@
 
     justify-self: start;
   }
+
+  @media (min-width: $vp-1440) {
+    display: none;
+  }
 }
 
 .page-header__logo {
@@ -79,6 +99,10 @@
     margin-left: 0;
 
     justify-self: center;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-left: 32px;
   }
 }
 
@@ -95,7 +119,13 @@
 
   @media (min-width: $vp-768) {
     margin-top: 3px;
+
     justify-self: end;
+  }
+
+  @media (min-width: $vp-1440) {
+    font-size: 18px;
+    line-height: 18px;
   }
 
   &:hover {
@@ -133,6 +163,17 @@
     padding: 28px 40px 66px 40px;
   }
 
+  @media (min-width: $vp-1440) {
+    position: static;
+
+    margin-left: 60px;
+    padding: 21px 0 19px;
+
+    transform: none;
+
+    transition: none;
+  }
+
   .is-open & {
     transform: translateY(0%);
   }
@@ -149,6 +190,19 @@
 
   @media (min-width: $vp-768) {
     gap: 18px;
+  }
+
+  @media (min-width: $vp-1440) {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px;
+  }
+}
+
+.page-header__nav-item {
+  @media (min-width: $vp-1440) {
+    max-width: 300px;
   }
 }
 
@@ -167,6 +221,14 @@
   outline: 1px solid transparent;
 
   transition: outline 0.6s ease;
+
+  @media (min-width: $vp-1440) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: none;
+    letter-spacing: normal;
+  }
 
   &:focus {
     outline: none;
