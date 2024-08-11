@@ -132,7 +132,7 @@
     color: var(--white-50);
   }
 
-  &:focus {
+  &:focus-visible {
     color: var(--primary);
   }
 
@@ -230,7 +230,7 @@
     letter-spacing: normal;
   }
 
-  &:focus {
+  &:focus-visible {
     outline: none;
     outline: 1px solid var(--white-100);
   }
@@ -255,6 +255,19 @@
   transform: scale(1);
 }
 
-.page-header__link:focus::before {
+.page-header__link:focus-visible::before {
   opacity: 0;
+}
+
+@supports not selector(:focus-visible) {
+  .page-header__link:focus {
+    outline: none;
+    outline: 1px solid var(--white-100);
+  }
+  .page-header__link:focus::before {
+    opacity: 0;
+  }
+  .page-header__phone:focus {
+    color: var(--primary);
+  }
 }

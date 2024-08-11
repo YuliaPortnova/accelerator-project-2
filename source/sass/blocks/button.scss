@@ -9,20 +9,47 @@
   text-decoration: none;
 
   background-color: var(--additional-100);
-  cursor: pointer;
   border: 1px solid transparent;
+  cursor: pointer;
+
   transition: border-color 0.8s ease, background-color 0.4s ease, color 0.4s ease;
 
   &:hover {
-    border-color: var(--active);
     color: var(--active);
+
     background-color: var(--white-100);
+    border-color: var(--active);
   }
 
-  &:focus {
-    outline: none;
-    border-color: transparent;
+  &:focus-visible {
     color: var(--active);
+
     background-color: var(--white-100);
+    border-color: transparent;
+    outline: none;
+  }
+
+  &:active {
+    color: var(--white-100);
+
+    background-color: var(--active);
+    border-color: transparent;
+  }
+
+  &.is-disabled {
+    background-color: var(--disabled);
+    border-color: var(--disabled);
+
+    pointer-events: none;
+  }
+}
+
+@supports not selector(:focus-visible) {
+  .button:focus {
+    color: var(--active);
+
+    background-color: var(--white-100);
+    border-color: transparent;
+    outline: none;
   }
 }
