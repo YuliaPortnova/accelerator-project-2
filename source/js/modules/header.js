@@ -31,8 +31,8 @@ const onMenuFocusOut = () => {
   if (document.body.clientWidth <= 768) {
     closeMenu();
   }
-  menu.removeEventListener("focusin", onMenuFocusIn);
-  menu.removeEventListener("focusout", onMenuFocusOut);
+  menu.removeEventListener('focusin', onMenuFocusIn);
+  menu.removeEventListener('focusout', onMenuFocusOut);
 }
 
 links.forEach((link) => {
@@ -41,8 +41,8 @@ links.forEach((link) => {
     document.body.removeAttribute('style');
   })
   link.addEventListener('focus', () => {
-    menu.addEventListener("focusin", onMenuFocusIn);
-    menu.addEventListener("focusout", onMenuFocusOut);
+    menu.addEventListener('focusin', onMenuFocusIn);
+    menu.addEventListener('focusout', onMenuFocusOut);
   })
 });
 
