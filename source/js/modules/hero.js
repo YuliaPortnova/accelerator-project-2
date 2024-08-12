@@ -9,6 +9,7 @@ new Swiper('.hero', {
   pagination: {
     el: ".hero__pagination",
     clickable: true,
+    bulletElement: 'button type="button"',
   },
   watchOverflow: true,
   spaceBetween: 40,
