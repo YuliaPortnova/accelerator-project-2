@@ -38,6 +38,10 @@
   @media (min-width: $vp-768) {
     min-height: 1034px;
   }
+
+  @media (min-width: $vp-1440) {
+    min-height: 800px;
+  }
 }
 
 .hero__img-container img {
@@ -60,6 +64,15 @@
     min-height: 1034px;
     padding: 40px 45px 100px;
   }
+
+  @media (min-width: $vp-1440) {
+    display: flex;
+    flex-direction: column;
+    min-height: 800px;
+    padding: 200px 380px 80px 120px;
+
+    gap: 25px;
+  }
 }
 
 .hero__content h3 {
@@ -73,6 +86,12 @@
   @media (min-width: $vp-768) {
     font-size: 56px;
     line-height: 56px;
+  }
+
+  @media (min-width: $vp-1440) {
+    font-size: 77px;
+    line-height: 77px;
+    text-align: left;
   }
 }
 
@@ -88,6 +107,13 @@
     font-size: 17px;
     line-height: 24px;
   }
+
+  @media (min-width: $vp-1440) {
+    max-width: 464px;
+    margin-left: 0;
+
+    text-align: left;
+  }
 }
 
 .hero__link {
@@ -97,6 +123,11 @@
   @media (min-width: $vp-768) {
     margin-top: 20px;
   }
+
+  @media (min-width: $vp-1440) {
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }
 
 .hero__img-mini-container {
@@ -105,6 +136,13 @@
   @media (min-width: $vp-768) {
     display: block;
   }
+
+  @media (min-width: $vp-1440) {
+    position: absolute;
+    top: 157px;
+    right: 120px;
+    z-index: -1;
+  }
 }
 
 .hero__img-mini-container img {
@@ -112,9 +150,67 @@
   margin: 30px auto 0;
 }
 
-.hero__pagination {
+.hero__info-container {
+  display: none;
+
+  @media (min-width: $vp-1440) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+
+    gap: 10px;
+  }
+}
+
+.hero__info {
+  @media (min-width: $vp-1440) {
+    display: grid;
+    align-items: center;
+    padding: 13px 19px;
+
+    font-size: 12px;
+    line-height: 16px;
+
+    border: 1px solid var(--white-50);
+
+    gap: 8px;
+    grid-template-columns: 12px 1fr;
+  }
+
+  &--nights {
+    --background-image: url("../__spritemap#sprite-moon-view");
+  }
+
+  &--complexity {
+    --background-image: url("../__spritemap#sprite-level-view");
+  }
+
+  &::before {
+    content: "";
+
+    width: 12px;
+    height: 12px;
+
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.hero .hero__pagination.swiper-pagination {
   --swiper-pagination-bottom: 35px;
   --swiper-pagination-bullet-horizontal-gap: 10px;
+
+  @media (min-width: $vp-1440) {
+    right: 110px;
+    left: initial;
+
+    width: 350px;
+
+    text-align: right;
+
+    --swiper-pagination-bottom: 92px;
+  }
 }
 
 .hero .swiper-pagination-bullet {
