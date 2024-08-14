@@ -1,0 +1,64 @@
+.slider-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.slider-buttons__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 35px;
+
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+  background-color: var(--additional-100);
+  color: var(--white-100);
+  --arrow-color: var(--white-100);
+  transition: border-color 0.4s ease, background-color 0.4s ease;
+
+  &:hover {
+    background-color: var(--white-100);
+    border-color: var(--active);
+    --arrow-color: var(--active);
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: var(--white-100);
+    border-color: transparent;
+    --arrow-color: var(--active);
+  }
+
+  &:active {
+    background-color: var(--active);
+    border-color: var(--active);
+    --arrow-color: var(--white-100);
+  }
+
+  &:disabled {
+    cursor: default;
+    background-color: var(--disabled);
+    border-color: var(--disabled);
+    --arrow-color: var(--white-100);
+  }
+
+  &--prev {
+    transform: rotate(180deg);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 9px;
+    background-color: var(--arrow-color);
+    mask-image: url("../__spritemap#sprite-arrow-right-view");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    transition: background-color 0.4s ease;
+  }
+}

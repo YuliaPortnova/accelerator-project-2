@@ -134,7 +134,159 @@
         </ul>
         <div class="hero__pagination swiper-pagination"></div>
       </section>
-      <div data-test="tours" id="tours">tours</div>
+      <section class="tours" data-test="tours" id="tours">
+        <div class="tours__container page__container swiper">
+          <h2 class="tours__title title" data-title="Ближайшие туры">Ближайшие туры</h2>
+          <div class="tours__slider-buttons slider-buttons">
+            <button class="slider-buttons__button slider-buttons__button--prev swiper-button-prev" type="button" disabled>
+              <span class="visually-hidden">Показать предыдущий слайд.</span>
+            </button>
+            <button class="slider-buttons__button slider-buttons__button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Показать следующий слайд.</span>
+            </button>
+          </div>
+          <ul class="tours__list swiper-wrapper">
+            <li class="tours__item swiper-slide">
+              <div class="tours__img-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/tours/tours-elbrus-desktop@1x.webp 1x, img/content/tours/tours-elbrus-desktop@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/tours/tours-elbrus-tablet@1x.webp 1x, img/content/tours/tours-elbrus-tablet@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="img/content/tours/tours-elbrus-mobile@1x.webp 1x, img/content/tours/tours-elbrus-mobile@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/tours/tours-elbrus-desktop@1x.jpg 1x, img/content/tours/tours-elbrus-desktop@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/tours/tours-elbrus-tablet@1x.jpg 1x, img/content/tours/tours-elbrus-tablet@2x.jpg 2x" width="330" height="416">
+                  <img class="tours__img" src="img/content/tours/tours-elbrus-mobile@1x.jpg" srcset="img/content/tours/tours-elbrus-mobile@2x.jpg 2x" width="290" height="416" alt="Дорога к Эльбрусу.">
+                </picture>
+              </div>
+              <div class="tours__content">
+                <div class="tours__details-top">
+                  <span class="tours__location">Кавказ</span>
+                  <span class="tours__duration tours__duration--days">4 дня</span>
+                  <span class="tours__duration tours__duration--nights">3 ночи</span>
+                </div>
+                <h3 class="tours__subtitle">Путешествие вокруг&nbsp;Эльбруса</h3>
+                <dl class="tours__details-bottom">
+                  <div class="tours__details-group">
+                    <dt class="tours__details-title tours__complexity tours__complexity--4">Сложность:</dt>
+                    <dd class="visually-hidden">Четвертый уровень из пяти.</dd>
+                  </div>
+                  <div class="tours__details-group">
+                    <dt class="tours__details-title">Даты набора:</dt>
+                    <dd class="tours__details-text">12.06–19.06</dd>
+                  </div>
+                  <div class="tours__details-group">
+                    <dt class="tours__details-title">Группа:</dt>
+                    <dd class="tours__details-text">до 15 чел.</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="tours__item swiper-slide">
+              <div class="tours__img-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/tours/tours-beluha-desktop@1x.webp 1x, img/content/tours/tours-beluha-desktop@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/tours/tours-beluha-tablet@1x.webp 1x, img/content/tours/tours-beluha-tablet@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="img/content/tours/tours-beluha-mobile@1x.webp 1x, img/content/tours/tours-beluha-mobile@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/tours/tours-beluha-desktop@1x.jpg 1x, img/content/tours/tours-beluha-desktop@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/tours/tours-beluha-tablet@1x.jpg 1x, img/content/tours/tours-beluha-tablet@2x.jpg 2x" width="330" height="416">
+                  <img class="tours__img" src="img/content/tours/tours-beluha-mobile@1x.jpg" srcset="img/content/tours/tours-beluha-mobile@2x.jpg 2x" width="290" height="416" alt="Дорога к горе Белуха.">
+                </picture>
+              </div>
+              <div class="tours__content">
+                <div class="tours__details-top">
+                  <span class="tours__location">Алтай</span>
+                  <span class="tours__duration tours__duration--days">14 дней</span>
+                  <span class="tours__duration tours__duration--nights">13 ночей</span>
+                </div>
+                <h3 class="tours__subtitle">Путь к подножию Белухи</h3>
+                <dl class="tours__details-bottom">
+                  <div class="tours__details-group">
+                    <dt class="tours__details-title tours__complexity tours__complexity--3">Сложность:</dt>
+                    <dd class="visually-hidden">Третий уровень из пяти.</dd>
+                  </div>
+                  <div class="tours__details-group">
+                    <dt class="tours__details-title">Даты набора:</dt>
+                    <dd class="tours__details-text">14.06–23.06</dd>
+                  </div>
+                  <div class="tours__details-group">
+                    <dt class="tours__details-title">Группа:</dt>
+                    <dd class="tours__details-text">до 25 чел.</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="tours__item swiper-slide">
+              <div class="tours__img-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/tours/tours-fisht-desktop@1x.webp 1x, img/content/tours/tours-fisht-desktop@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/tours/tours-fisht-tablet@1x.webp 1x, img/content/tours/tours-fisht-tablet@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="img/content/tours/tours-fisht-mobile@1x.webp 1x, img/content/tours/tours-fisht-mobile@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/tours/tours-fisht-desktop@1x.jpg 1x, img/content/tours/tours-fisht-desktop@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/tours/tours-fisht-tablet@1x.jpg 1x, img/content/tours/tours-fisht-tablet@2x.jpg 2x" width="330" height="416">
+                  <img class="tours__img" src="img/content/tours/tours-fisht-mobile@1x.jpg" srcset="img/content/tours/tours-fisht-mobile@2x.jpg 2x" width="290" height="416" alt="Дорога к морю через гору Фишт.">
+                </picture>
+              </div>
+              <div class="tours__content">
+                <div class="tours__details-top">
+                  <span class="tours__location">Адыгея</span>
+                  <span class="tours__duration tours__duration--days">7 дней</span>
+                  <span class="tours__duration tours__duration--nights">6 ночей</span>
+                </div>
+                <h3 class="tours__subtitle">Через Фишт к Чёрному морю и обратно</h3>
+                <dl class="tours__details-bottom">
+                  <div class="tours__details-group">
+                    <dt class="tours__details-title tours__complexity tours__complexity--4">Сложность:</dt>
+                    <dd class="visually-hidden">Четвёртый уровень из пяти.</dd>
+                  </div>
+                  <div class="tours__details-group">
+                    <dt class="tours__details-title">Даты набора:</dt>
+                    <dd class="tours__details-text">15.07–19.07</dd>
+                  </div>
+                  <div class="tours__details-group">
+                    <dt class="tours__details-title">Группа:</dt>
+                    <dd class="tours__details-text">до 22 чел.</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="tours__item swiper-slide">
+              <div class="tours__img-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/tours/tours-manaraga-desktop@1x.webp 1x, img/content/tours/tours-manaraga-desktop@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/tours/tours-manaraga-tablet@1x.webp 1x, img/content/tours/tours-manaraga-tablet@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="img/content/tours/tours-manaraga-mobile@1x.webp 1x, img/content/tours/tours-manaraga-mobile@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/tours/tours-manaraga-desktop@1x.jpg 1x, img/content/tours/tours-manaraga-desktop@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/tours/tours-manaraga-tablet@1x.jpg 1x, img/content/tours/tours-manaraga-tablet@2x.jpg 2x" width="330" height="416">
+                  <img class="tours__img" src="img/content/tours/tours-manaraga-mobile@1x.jpg" srcset="img/content/tours/tours-manaraga-mobile@2x.jpg 2x" width="290" height="416" alt="Гора Манарага.">
+                </picture>
+              </div>
+              <div class="tours__content">
+                <div class="tours__details-top">
+                  <span class="tours__location">Урал</span>
+                  <span class="tours__duration tours__duration--days">9 дней</span>
+                  <span class="tours__duration tours__duration--nights">10 ночей</span>
+                </div>
+                <h3 class="tours__subtitle">Восхождение Манарага</h3>
+                <dl class="tours__details-bottom">
+                  <div class="tours__details-group">
+                    <dt class="tours__details-title tours__complexity tours__complexity--5">Сложность:</dt>
+                    <dd class="visually-hidden">Пятый уровень из пяти.</dd>
+                  </div>
+                  <div class="tours__details-group">
+                    <dt class="tours__details-title">Даты набора:</dt>
+                    <dd class="tours__details-text">12.07–19.07</dd>
+                  </div>
+                  <div class="tours__details-group">
+                    <dt class="tours__details-title">Группа:</dt>
+                    <dd class="tours__details-text">до 7 чел.</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+          </ul>
+          <!-- Для показа состояния disabled добавьте ссылке .tours__all-link класс .is-disabled -->
+          <a class="tours__all-link" href="#">Показать все туры</a>
+        </div>
+      </section>
       <div data-test="training" id="training">training</div>
       <div data-test="about" id="about">about</div>
       <div data-test="reviews" id="reviews">reviews</div>

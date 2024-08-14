@@ -1,0 +1,32 @@
+.title {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+  color: var(--primary);
+
+  @media (min-width: $vp-768) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  &::before {
+    content: attr(data-title);
+    position: absolute;
+    top: 23px;
+    left: 15px;
+
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 26px;
+
+    opacity: 0.03;
+
+    @media (min-width: $vp-768) {
+      top: 45px;
+      left: 45px;
+
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+}
