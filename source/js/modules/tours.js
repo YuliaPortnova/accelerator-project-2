@@ -4,7 +4,7 @@ import {Navigation} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-new Swiper('.tours__container', {
+new Swiper('.tours__slider', {
   modules: [Navigation],
   watchOverflow: true,
   spaceBetween: 18,
@@ -28,7 +28,10 @@ new Swiper('.tours__container', {
       grabCursor: false,
     },
     1366: {
+      spaceBetween: 30,
       slidesPerView: 3,
+      simulateTouch: false,
+      grabCursor: false,
     }
   }
 });

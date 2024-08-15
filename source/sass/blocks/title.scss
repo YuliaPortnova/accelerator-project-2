@@ -1,4 +1,6 @@
 .title {
+  padding-top: 38px;
+  position: relative;
   font-weight: 800;
   font-size: 22px;
   line-height: 22px;
@@ -9,11 +11,16 @@
     line-height: 25px;
   }
 
+  @media (min-width: $vp-1440) {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
   &::before {
     content: attr(data-title);
     position: absolute;
     top: 23px;
-    left: 15px;
+    left: 0px;
 
     font-weight: 800;
     font-size: 26px;
@@ -22,11 +29,13 @@
     opacity: 0.03;
 
     @media (min-width: $vp-768) {
-      top: 45px;
-      left: 45px;
-
       font-size: 40px;
       line-height: 40px;
+    }
+
+    @media (min-width: $vp-1440) {
+      font-size: 55px;
+      line-height: 55px;
     }
   }
 }

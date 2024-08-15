@@ -1,141 +1,142 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sass/style.scss">
-    <!-- <link rel="preload" href="fonts/alumni-sans-800.woff2" as="font" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sass/style.scss">
+  <!-- <link rel="preload" href="fonts/alumni-sans-800.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto-condensed-700.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto-condensed-400.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/alumni-sans-600.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto-condensed-300.woff2" as="font" crossorigin="anonymous"> -->
-    <title>Lifetour</title>
-    <meta name="description" content="Второй проект акселератора">
-    <!-- <link rel="icon" href="favicon.ico">
+  <title>Lifetour</title>
+  <meta name="description" content="Второй проект акселератора">
+  <!-- <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="img/favicons/favicon.png">
     <link rel="icon" type="image/svg+xml" href="img/favicons/favicon.svg">
     <link rel="apple-touch-icon" href="img/favicons/icon-180.png">
     <link rel="manifest" href="manifest.webmanifest"> -->
-  </head>
+</head>
 
-  <body class="page">
-    <header class="page-header" data-test="header">
-      <div class="page__container page-header__container">
-        <button class="page-header__burger-button burger-button">
-          <span class="burger-button__line"></span>
-          <span class="burger-button__line"></span>
-          <span class="burger-button__line"></span>
-          <span class="visually-hidden">Открыть/закрыть меню навигации.</span>
-        </button>
-        <img class="page-header__logo" src="img/content/logo.svg" alt="Логотип Lifetour." width="142" height="42">
-        <nav class="page-header__nav">
-          <ul class="page-header__nav-list">
-            <li class="page-header__nav-item">
-              <a class="page-header__link" href="#tours">Туры</a>
-            </li>
-            <li class="page-header__nav-item">
-              <a class="page-header__link" href="#training">Обучение</a>
-            </li>
-            <li class="page-header__nav-item">
-              <a class="page-header__link" href="#about">О нас</a>
-            </li>
-            <li class="page-header__nav-item">
-              <a class="page-header__link" href="#reviews">Отзывы</a>
-            </li>
-            <li class="page-header__nav-item">
-              <a class="page-header__link" href="#gallery">Фотографии</a>
-            </li>
-            <li class="page-header__nav-item">
-              <a class="page-header__link" href="#footer">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="page-header__phone" href="tel:88000000000">8 800 000-00-00</a>
-      </div>
-    </header>
-    <main class="page__main">
-      <h1 class="visually-hidden">Lifetour! Организация горных походов по самым красивым местам России.</h1>
-      <section class="hero swiper" data-test="hero">
-        <h2 class="visually-hidden">Самые впечатляющие туры:</h2>
-        <ul class="hero__list swiper-wrapper">
-          <li class="hero__item swiper-slide">
-            <div class="hero__img-container">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/hero/hero-caucasus-desktop@1x.webp 1x, img/content/hero/hero-caucasus-desktop@2x.webp 2x" width="1440" height="800">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/hero-caucasus-tablet@1x.webp 1x, img/content/hero/hero-caucasus-tablet@2x.webp 2x" width="768" height="1034">
-                <source type="image/webp" srcset="img/content/hero/hero-caucasus-mobile@1x.webp 1x, img/content/hero/hero-caucasus-mobile@2x.webp 2x" width="320" height="568">
-                <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/hero/hero-caucasus-desktop@1x.jpg 1x, img/content/hero/hero-caucasus-desktop@2x.jpg 2x" width="1440" height="800">
-                <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/hero/hero-caucasus-tablet@1x.jpg 1x, img/content/hero/hero-caucasus-tablet@2x.jpg 2x" width="768" height="1034">
-                <img class="hero__img" src="img/content/hero/hero-caucasus-mobile@1x.jpg" srcset="img/content/hero/hero-caucasus-mobile@2x.jpg 2x" width="320" height="568" alt="">
-              </picture>
-            </div>
-            <div class="hero__content page__container">
-              <h3>Захватывающие вершины Кавказа</h3>
-              <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-              <!-- Для отображения состояния disabled добавьте ссылке .button класс .is-disabled -->
-              <a class="hero__link button" href="#">Смотреть тур</a>
-              <div class="hero__info-container">
-                <span class="hero__info hero__info--nights">6 дней/5 ночей</span>
-                <span class="hero__info hero__info--complexity">Высокая сложность</span>
-              </div>
-            </div>
+<body class="page">
+  <header class="page-header" data-test="header">
+    <div class="page__container page-header__container">
+      <button class="page-header__burger-button burger-button">
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+        <span class="visually-hidden">Открыть/закрыть меню навигации.</span>
+      </button>
+      <img class="page-header__logo" src="img/content/logo.svg" alt="Логотип Lifetour." width="142" height="42">
+      <nav class="page-header__nav">
+        <ul class="page-header__nav-list">
+          <li class="page-header__nav-item">
+            <a class="page-header__link" href="#tours">Туры</a>
           </li>
-          <li class="hero__item swiper-slide">
-            <div class="hero__img-container">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/hero/hero-kamchatka-desktop@1x.webp 1x, img/content/hero/hero-kamchatka-desktop@2x.webp 2x" width="1440" height="800">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/hero-kamchatka-tablet@1x.webp 1x, img/content/hero/hero-kamchatka-tablet@2x.webp 2x" width="768" height="1034">
-                <source type="image/webp" srcset="img/content/hero/hero-kamchatka-mobile@1x.webp 1x, img/content/hero/hero-kamchatka-mobile@2x.webp 2x" width="320" height="568">
-                <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/hero/hero-kamchatka-desktop@1x.jpg 1x, img/content/hero/hero-kamchatka-desktop@2x.jpg 2x" width="1440" height="800">
-                <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/hero/hero-kamchatka-tablet@1x.jpg 1x, img/content/hero/hero-kamchatka-tablet@2x.jpg 2x" width="768" height="1034">
-                <img class="hero__img" src="img/content/hero/hero-kamchatka-mobile@1x.jpg" srcset="img/content/hero/hero-kamchatka-mobile@2x.jpg 2x" width="320" height="568" alt="">
-              </picture>
-            </div>
-            <div class="hero__content page__container">
-              <h3>Невероятная природа Камчатки</h3>
-              <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-              <a class="hero__link button" href="#">Смотреть тур</a>
-              <div class="hero__img-mini-container">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/hero/hero-kamchatka-mini-desktop@1x.webp 1x, img/content/hero/hero-kamchatka-mini-desktop@2x.webp 2x" width="410" height="459">
-                  <source type="image/webp" srcset="img/content/hero/hero-kamchatka-mini-tablet@1x.webp 1x, img/content/hero/hero-kamchatka-mini-tablet@2x.webp 2x" width="442" height="365">
-                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/hero/hero-kamchatka-mini-desktop@1x.jpg 1x, img/content/hero/hero-kamchatka-mini-desktop@2x.jpg 2x" width="410" height="459">
-                  <img class="hero__img-mini" src="img/content/hero/hero-kamchatka-mini-tablet@1x.png" srcset="img/content/hero/hero-kamchatka-mini-tablet@2x.jpg 2x" width="442" height="365" alt="Пейзажи Камчатки.">
-                </picture>
-              </div>
-              <div class="hero__info-container">
-                <span class="hero__info hero__info--nights">9 дней/10 ночей</span>
-                <span class="hero__info hero__info--complexity">Средняя сложность</span>
-              </div>
-            </div>
+          <li class="page-header__nav-item">
+            <a class="page-header__link" href="#training">Обучение</a>
           </li>
-          <li class="hero__item swiper-slide">
-            <div class="hero__img-container">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/hero/hero-altay-desktop@1x.webp 1x, img/content/hero/hero-altay-desktop@2x.webp 2x" width="1440" height="800">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/hero-altay-tablet@1x.webp 1x, img/content/hero/hero-altay-tablet@2x.webp 2x" width="768" height="1034">
-                <source type="image/webp" srcset="img/content/hero/hero-altay-mobile@1x.webp 1x, img/content/hero/hero-altay-mobile@2x.webp 2x" width="320" height="568">
-                <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/hero/hero-altay-desktop@1x.jpg 1x, img/content/hero/hero-altay-desktop@2x.jpg 2x" width="1440" height="800">
-                <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/hero/hero-altay-tablet@1x.jpg 1x, img/content/hero/hero-altay-tablet@2x.jpg 2x" width="768" height="1034">
-                <img class="hero__img" src="img/content/hero/hero-altay-mobile@1x.jpg" srcset="img/content/hero/hero-altay-mobile@2x.jpg 2x" width="320" height="568" alt="">
-              </picture>
-            </div>
-            <div class="hero__content page__container">
-              <h3>Магические пейзажи Алтайского Края</h3>
-              <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-              <a class="hero__link button" href="#">Смотреть тур</a>
-              <div class="hero__info-container">
-                <span class="hero__info hero__info--nights">8 дней/7 ночей</span>
-                <span class="hero__info hero__info--complexity">Лёгкая сложность</span>
-              </div>
-            </div>
+          <li class="page-header__nav-item">
+            <a class="page-header__link" href="#about">О нас</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__link" href="#gallery">Фотографии</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__link" href="#footer">Контакты</a>
           </li>
         </ul>
-        <div class="hero__pagination swiper-pagination"></div>
-      </section>
-      <section class="tours" data-test="tours" id="tours">
-        <div class="tours__container page__container swiper">
+      </nav>
+      <a class="page-header__phone" href="tel:88000000000">8 800 000-00-00</a>
+    </div>
+  </header>
+  <main class="page__main">
+    <h1 class="visually-hidden">Lifetour! Организация горных походов по самым красивым местам России.</h1>
+    <section class="hero swiper" data-test="hero">
+      <h2 class="visually-hidden">Самые впечатляющие туры:</h2>
+      <ul class="hero__list swiper-wrapper">
+        <li class="hero__item swiper-slide">
+          <div class="hero__img-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/hero/hero-caucasus-desktop@1x.webp 1x, img/content/hero/hero-caucasus-desktop@2x.webp 2x" width="1440" height="800">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/hero-caucasus-tablet@1x.webp 1x, img/content/hero/hero-caucasus-tablet@2x.webp 2x" width="768" height="1034">
+              <source type="image/webp" srcset="img/content/hero/hero-caucasus-mobile@1x.webp 1x, img/content/hero/hero-caucasus-mobile@2x.webp 2x" width="320" height="568">
+              <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/hero/hero-caucasus-desktop@1x.jpg 1x, img/content/hero/hero-caucasus-desktop@2x.jpg 2x" width="1440" height="800">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/hero/hero-caucasus-tablet@1x.jpg 1x, img/content/hero/hero-caucasus-tablet@2x.jpg 2x" width="768" height="1034">
+              <img class="hero__img" src="img/content/hero/hero-caucasus-mobile@1x.jpg" srcset="img/content/hero/hero-caucasus-mobile@2x.jpg 2x" width="320" height="568" alt="">
+            </picture>
+          </div>
+          <div class="hero__content page__container">
+            <h3>Захватывающие вершины Кавказа</h3>
+            <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+            <!-- Для отображения состояния disabled добавьте ссылке .button класс .is-disabled -->
+            <a class="hero__link button" href="#">Смотреть тур</a>
+            <div class="hero__info-container">
+              <span class="hero__info hero__info--nights">6 дней/5 ночей</span>
+              <span class="hero__info hero__info--complexity">Высокая сложность</span>
+            </div>
+          </div>
+        </li>
+        <li class="hero__item swiper-slide">
+          <div class="hero__img-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/hero/hero-kamchatka-desktop@1x.webp 1x, img/content/hero/hero-kamchatka-desktop@2x.webp 2x" width="1440" height="800">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/hero-kamchatka-tablet@1x.webp 1x, img/content/hero/hero-kamchatka-tablet@2x.webp 2x" width="768" height="1034">
+              <source type="image/webp" srcset="img/content/hero/hero-kamchatka-mobile@1x.webp 1x, img/content/hero/hero-kamchatka-mobile@2x.webp 2x" width="320" height="568">
+              <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/hero/hero-kamchatka-desktop@1x.jpg 1x, img/content/hero/hero-kamchatka-desktop@2x.jpg 2x" width="1440" height="800">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/hero/hero-kamchatka-tablet@1x.jpg 1x, img/content/hero/hero-kamchatka-tablet@2x.jpg 2x" width="768" height="1034">
+              <img class="hero__img" src="img/content/hero/hero-kamchatka-mobile@1x.jpg" srcset="img/content/hero/hero-kamchatka-mobile@2x.jpg 2x" width="320" height="568" alt="">
+            </picture>
+          </div>
+          <div class="hero__content page__container">
+            <h3>Невероятная природа Камчатки</h3>
+            <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+            <a class="hero__link button" href="#">Смотреть тур</a>
+            <div class="hero__img-mini-container">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/hero/hero-kamchatka-mini-desktop@1x.webp 1x, img/content/hero/hero-kamchatka-mini-desktop@2x.webp 2x" width="410" height="459">
+                <source type="image/webp" srcset="img/content/hero/hero-kamchatka-mini-tablet@1x.webp 1x, img/content/hero/hero-kamchatka-mini-tablet@2x.webp 2x" width="442" height="365">
+                <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/hero/hero-kamchatka-mini-desktop@1x.jpg 1x, img/content/hero/hero-kamchatka-mini-desktop@2x.jpg 2x" width="410" height="459">
+                <img class="hero__img-mini" src="img/content/hero/hero-kamchatka-mini-tablet@1x.png" srcset="img/content/hero/hero-kamchatka-mini-tablet@2x.jpg 2x" width="442" height="365" alt="Пейзажи Камчатки.">
+              </picture>
+            </div>
+            <div class="hero__info-container">
+              <span class="hero__info hero__info--nights">9 дней/10 ночей</span>
+              <span class="hero__info hero__info--complexity">Средняя сложность</span>
+            </div>
+          </div>
+        </li>
+        <li class="hero__item swiper-slide">
+          <div class="hero__img-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/hero/hero-altay-desktop@1x.webp 1x, img/content/hero/hero-altay-desktop@2x.webp 2x" width="1440" height="800">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/hero-altay-tablet@1x.webp 1x, img/content/hero/hero-altay-tablet@2x.webp 2x" width="768" height="1034">
+              <source type="image/webp" srcset="img/content/hero/hero-altay-mobile@1x.webp 1x, img/content/hero/hero-altay-mobile@2x.webp 2x" width="320" height="568">
+              <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/hero/hero-altay-desktop@1x.jpg 1x, img/content/hero/hero-altay-desktop@2x.jpg 2x" width="1440" height="800">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/hero/hero-altay-tablet@1x.jpg 1x, img/content/hero/hero-altay-tablet@2x.jpg 2x" width="768" height="1034">
+              <img class="hero__img" src="img/content/hero/hero-altay-mobile@1x.jpg" srcset="img/content/hero/hero-altay-mobile@2x.jpg 2x" width="320" height="568" alt="">
+            </picture>
+          </div>
+          <div class="hero__content page__container">
+            <h3>Магические пейзажи Алтайского Края</h3>
+            <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+            <a class="hero__link button" href="#">Смотреть тур</a>
+            <div class="hero__info-container">
+              <span class="hero__info hero__info--nights">8 дней/7 ночей</span>
+              <span class="hero__info hero__info--complexity">Лёгкая сложность</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="hero__pagination swiper-pagination"></div>
+    </section>
+    <section class="tours" data-test="tours" id="tours">
+      <div class="tours__container page__container">
+        <div class="tours__slider swiper">
           <h2 class="tours__title title" data-title="Ближайшие туры">Ближайшие туры</h2>
           <div class="tours__slider-buttons slider-buttons">
             <button class="slider-buttons__button slider-buttons__button--prev swiper-button-prev" type="button" disabled>
@@ -283,19 +284,20 @@
               </div>
             </li>
           </ul>
-          <!-- Для показа состояния disabled добавьте ссылке .tours__all-link класс .is-disabled -->
-          <a class="tours__all-link" href="#">Показать все туры</a>
         </div>
-      </section>
-      <div data-test="training" id="training">training</div>
-      <div data-test="about" id="about">about</div>
-      <div data-test="reviews" id="reviews">reviews</div>
-      <div data-test="adv">adv</div>
-      <div data-test="gallery" id="gallery">gallery</div>
-      <div data-test="form">form</div>
-    </main>
-    <footer class="page-footer" data-test="footer" id="footer"></footer>
-    <script type="module" src="js/main.js"></script>
-  </body>
+        <!-- Для показа состояния disabled добавьте ссылке .tours__all-link класс .is-disabled -->
+        <a class="tours__all-link" href="#">Показать все туры</a>
+      </div>
+    </section>
+    <div data-test="training" id="training">training</div>
+    <div data-test="about" id="about">about</div>
+    <div data-test="reviews" id="reviews">reviews</div>
+    <div data-test="adv">adv</div>
+    <div data-test="gallery" id="gallery">gallery</div>
+    <div data-test="form">form</div>
+  </main>
+  <footer class="page-footer" data-test="footer" id="footer"></footer>
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>
