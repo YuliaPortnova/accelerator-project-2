@@ -46,10 +46,6 @@
     --arrow-color: var(--white-100);
   }
 
-  &--prev {
-    transform: rotate(180deg);
-  }
-
   &::before {
     content: "";
     display: block;
@@ -61,4 +57,8 @@
     mask-repeat: no-repeat;
     transition: background-color 0.4s ease;
   }
+}
+
+.slider-buttons__button--prev::before {
+  transform: rotate(180deg);
 }

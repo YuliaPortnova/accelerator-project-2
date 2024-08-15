@@ -12,8 +12,8 @@ new Swiper('.tours__container', {
   lazy: true,
 
   navigation: {
-    nextEl: '.tours__slider-buttons .swiper-button-prev',
-    prevEl: '.tours__slider-buttons .swiper-button-next',
+    nextEl: '.tours__slider-buttons .swiper-button-next',
+    prevEl: '.tours__slider-buttons .swiper-button-prev',
   },
 
   breakpoints: {

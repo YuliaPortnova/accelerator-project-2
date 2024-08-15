@@ -18,6 +18,20 @@
       background-image: url("../img/background/clouds-mobile@2x.png");
       background-size: 141px auto;
     }
+
+    @media (min-width: $vp-768) {
+      top: -92px;
+
+      width: 425px;
+      height: 1630px;
+
+      background-image: url("../img/background/clouds-1-tablet@1x.png");
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../img/background/clouds-1-tablet@2x.png");
+        background-size: 425px auto;
+      }
+    }
   }
 }
 
@@ -28,9 +42,11 @@
   @media (min-width: $vp-768) {
     display: grid;
     width: 678px;
-    padding: 60px 45px 40px;
+    padding: 50px 45px 40px;
+    overflow: clip;
 
     grid-template-columns: 2fr 1fr;
+    overflow-clip-margin: content-box;
   }
 }
 
@@ -39,6 +55,7 @@
 
   @media (min-width: $vp-768) {
     display: flex;
+    margin-top: 10px;
 
     justify-self: end;
   }
@@ -48,18 +65,19 @@
   margin: 0 0 40px;
 
   @media (min-width: $vp-768) {
+    margin-top: 10px;
     margin-bottom: 35px;
   }
 }
 
-.tours__list {
+.tours .tours__list {
   margin: 0 0 25px;
   padding: 0;
 
   list-style-type: none;
 
   @media (min-width: $vp-768) {
-    overflow: hidden;
+    height: auto;
 
     grid-column: 1/-1;
   }
@@ -135,7 +153,6 @@
     padding-left: 12px;
   }
 
-
   &::before {
     content: "";
 
@@ -164,21 +181,21 @@
     max-width: 67px;
     margin-right: 10px;
 
+    --background-image: url("../__spritemap#sprite-days-view");
+
     @media (min-width: $vp-768) {
       max-width: max-content;
     }
-
-    --background-image: url("../__spritemap#sprite-days-view");
   }
 
   &--nights {
     max-width: 74px;
 
+    --background-image: url("../__spritemap#sprite-moon-view");
+
     @media (min-width: $vp-768) {
       max-width: max-content;
     }
-
-    --background-image: url("../__spritemap#sprite-moon-view");
   }
 
   &::before {
@@ -318,6 +335,13 @@
   letter-spacing: 0.04em;
 
   --mask-color: var(--primary);
+
+  @media (min-width: $vp-768) {
+    max-width: max-content;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
 
   @media (min-width: $vp-768) {
     grid-column: 1/-1;
