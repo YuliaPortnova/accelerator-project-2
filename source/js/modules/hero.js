@@ -1,4 +1,3 @@
-// https://swiperjs.com/get-started#installation
 import Swiper from 'swiper';
 import {Pagination} from 'swiper/modules';
 import 'swiper/css';
@@ -16,6 +15,8 @@ new Swiper('.hero', {
   speed: 500,
   loop: true,
   lazy: true,
+  lazyPreloadPrevNext: 1,
+  preventClicks: true,
 
   breakpoints: {
     320: {

@@ -3,19 +3,19 @@ import {Navigation} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-new Swiper('.tours__slider', {
-  modules: [Navigation],
+new Swiper('.training__slider', {
+  // modules: [Navigation],
   watchOverflow: true,
-  spaceBetween: 18,
+  spaceBetween: 20,
   speed: 600,
   lazy: true,
   lazyPreloadPrevNext: 1,
-  updateOnWindowResize: true,
+  initialSlide: 1,
 
-  navigation: {
-    nextEl: '.tours__slider-buttons .swiper-button-next',
-    prevEl: '.tours__slider-buttons .swiper-button-prev',
-  },
+  // navigation: {
+  //   nextEl: '.tours__slider-buttons .swiper-button-next',
+  //   prevEl: '.tours__slider-buttons .swiper-button-prev',
+  // },
 
   breakpoints: {
     320: {
@@ -24,13 +24,12 @@ new Swiper('.tours__slider', {
       grabCursor: true,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       simulateTouch: false,
       grabCursor: false,
     },
     1366: {
-      spaceBetween: 30,
-      slidesPerView: 3,
+      slidesPerView: 4,
       simulateTouch: false,
       grabCursor: false,
     }

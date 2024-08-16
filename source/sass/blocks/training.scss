@@ -1,0 +1,165 @@
+.training__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+
+  gap: 24px;
+}
+
+.training__title {
+  margin: 0 0 9px;
+  padding-top: 36px;
+}
+
+
+.training .training__slider {
+  width: 290px;
+  padding-top: 5px;
+
+  @media (min-width: $vp-768) {
+    width: 678px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1200px;
+  }
+}
+
+.training__img-container {
+  margin-bottom: 15px;
+}
+
+.training__img {
+  display: block;
+}
+
+.training__container > p {
+  margin: 0;
+}
+
+.training__subtitle {
+  margin: 0 0 25px;
+
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.training__slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.training__slider-item {
+  min-height: 356px;
+  padding: 13px 15px 15px;
+
+  border: 1px solid var(--additional-20);
+}
+
+.training__person {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+
+  gap: 6px;
+}
+
+.training__person h4 {
+  max-width: 183px;
+  margin: 0;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.training__slider-item p {
+  margin: 0 0 10px;
+
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.training__slider-item p:last-child {
+  margin-bottom: 0;
+}
+
+.training__process-title {
+  margin: 0 0 24px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.training__process-list {
+  position: relative;
+
+  display: grid;
+  margin: 0;
+  padding: 0 30px 0 0;
+
+  list-style-type: none;
+
+  gap: 25px;
+}
+
+.training__process-item {
+  position: relative;
+
+  min-height: 25px;
+  padding-left: 63px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+
+  background-repeat: no-repeat;
+  background-position: 29px 0;
+  background-size: 25px 25px;
+
+  &--learning {
+    background-image: url("../__spritemap#sprite-map-view");
+  }
+
+  &--preparation {
+    background-image: url("../__spritemap#sprite-boots-view");
+  }
+
+  &--lectures {
+    background-image: url("../__spritemap#sprite-pine-tree-view");
+  }
+
+  &--difficulties {
+    background-image: url("../__spritemap#sprite-mountain-view");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+
+    width: 14px;
+    height: 14px;
+
+    background-color: var(--additional-100);
+    border-radius: 50%;
+  }
+
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 6px;
+
+    width: 2px;
+    height: calc(100% + 18px);
+
+    background-color: var(--additional-100);
+  }
+}
