@@ -4,21 +4,21 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 new Swiper('.training__slider', {
-  // modules: [Navigation],
+  modules: [Navigation],
   watchOverflow: true,
   spaceBetween: 20,
   speed: 600,
   lazy: true,
   lazyPreloadPrevNext: 1,
-  initialSlide: 1,
 
-  // navigation: {
-  //   nextEl: '.tours__slider-buttons .swiper-button-next',
-  //   prevEl: '.tours__slider-buttons .swiper-button-prev',
-  // },
+  navigation: {
+    nextEl: '.training__slider .swiper-button-next',
+    prevEl: '.training__slider .swiper-button-prev',
+  },
 
   breakpoints: {
     320: {
+      initialSlide: 2,
       slidesPerView: 1,
       simulateTouch: true,
       grabCursor: true,

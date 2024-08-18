@@ -292,18 +292,46 @@
     <section class="training" data-test="training" id="training">
       <div class="training__container page__container">
         <h2 class="training__title title" data-title="Обучение">Обучение</h2>
-        <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+        <p>Обучение проводится квалифицированными специалистами, <br class="tablet">за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
         <div class="training__slider swiper">
           <h3 class="training__subtitle">Наши инструкторы</h3>
+          <div class="training__slider-buttons slider-buttons">
+            <button class="slider-buttons__button slider-buttons__button--prev swiper-button-prev" type="button" disabled>
+              <span class="visually-hidden">Показать предыдущий слайд.</span>
+            </button>
+            <button class="slider-buttons__button slider-buttons__button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Показать следующий слайд.</span>
+            </button>
+          </div>
           <ul class="training__slider-list swiper-wrapper">
             <li class="training__slider-item swiper-slide">
               <div class="training__img-container">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/instructors/afinogenova-desktop@1x.webp 1x, img/content/instructors/afinogenova-desktop@2x.webp 2x" width="255" height="200">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/instructors/afinogenova-tablet@1x.webp 1x, img/content/instructors/afinogenova-tablet@2x.webp 2x" width="283" height="200">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/instructors/prokofiev-tablet@1x.webp 1x, img/content/instructors/prokofiev-tablet@2x.webp 2x" width="183" height="200">
+                  <source type="image/webp" srcset="img/content/instructors/prokofiev-desktop@1x.webp 1x, img/content/instructors/prokofiev-desktop@2x.webp 2x" width="260" height="200">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/instructors/prokofiev-desktop@1x.jpg 1x, img/content/instructors/prokofiev-desktop@2x.jpg 2x" width="255" height="200">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/instructors/prokofiev-tablet@1x.jpg 1x, img/content/instructors/prokofiev-tablet@2x.jpg 2x" width="183" height="200">
+                  <img class="training__img" src="img/content/instructors/prokofiev-desktop@1x.jpg" srcset="img/content/instructors/prokofiev-desktop@2x.jpg 2x" width="260" height="200" alt="">
+                </picture>
+              </div>
+              <div class="training__person">
+                <h4>Александр Прокофьев</h4>
+                <!-- Для показа состояния disabled добавьте ссылке .social-link класс .is-disabled -->
+                <a class="training__social-link social-link social-link--small social-link--vk" href="#" target="_blank" rel="nofollow noopener">
+                  <span class="visually-hidden">Перейти на страницу инструктора во ВКонтакте.</span>
+                </a>
+              </div>
+              <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+            </li>
+            <li class="training__slider-item swiper-slide">
+              <div class="training__img-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/instructors/afinogenova-desktop@1x.webp 1x, img/content/instructors/afinogenova-desktop@2x.webp 2x" width="255" height="200">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/instructors/afinogenova-tablet@1x.webp 1x, img/content/instructors/afinogenova-tablet@2x.webp 2x" width="183" height="200">
                   <source type="image/webp" srcset="img/content/instructors/afinogenova-desktop@1x.webp 1x, img/content/instructors/afinogenova-desktop@2x.webp 2x" width="260" height="200">
                   <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/instructors/afinogenova-desktop@1x.jpg 1x, img/content/instructors/afinogenova-desktop@2x.jpg 2x" width="255" height="200">
-                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/instructors/afinogenova-tablet@1x.jpg 1x, img/content/instructors/afinogenova-tablet@2x.jpg 2x" width="283" height="200">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/instructors/afinogenova-tablet@1x.jpg 1x, img/content/instructors/afinogenova-tablet@2x.jpg 2x" width="183" height="200">
                   <img class="training__img" src="img/content/instructors/afinogenova-desktop@1x.jpg" srcset="img/content/instructors/afinogenova-desktop@2x.jpg 2x" width="260" height="200" alt="">
                 </picture>
               </div>
@@ -320,10 +348,10 @@
               <div class="training__img-container">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/instructors/kolesnichenko-desktop@1x.webp 1x, img/content/instructors/kolesnichenko-desktop@2x.webp 2x" width="255" height="200">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/instructors/kolesnichenko-tablet@1x.webp 1x, img/content/instructors/kolesnichenko-tablet@2x.webp 2x" width="283" height="200">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/instructors/kolesnichenko-tablet@1x.webp 1x, img/content/instructors/kolesnichenko-tablet@2x.webp 2x" width="183" height="200">
                   <source type="image/webp" srcset="img/content/instructors/kolesnichenko-mobile@1x.webp 1x, img/content/instructors/kolesnichenko-mobile@2x.webp 2x" width="260" height="200">
                   <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/instructors/kolesnichenko-desktop@1x.jpg 1x, img/content/instructors/kolesnichenko-desktop@2x.jpg 2x" width="255" height="200">
-                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/instructors/kolesnichenko-tablet@1x.jpg 1x, img/content/instructors/kolesnichenko-tablet@2x.jpg 2x" width="283" height="200">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/instructors/kolesnichenko-tablet@1x.jpg 1x, img/content/instructors/kolesnichenko-tablet@2x.jpg 2x" width="183" height="200">
                   <img class="training__img" src="img/content/instructors/kolesnichenko-mobile@1x.jpg" srcset="img/content/instructors/kolesnichenko-mobile@2x.jpg 2x" width="260" height="200" alt="">
                 </picture>
               </div>
@@ -335,6 +363,46 @@
                 </a>
               </div>
               <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+            </li>
+            <li class="training__slider-item swiper-slide">
+              <div class="training__img-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/instructors/kaygorodov-desktop@1x.webp 1x, img/content/instructors/kaygorodov-desktop@2x.webp 2x" width="255" height="200">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/instructors/kaygorodov-tablet@1x.webp 1x, img/content/instructors/kaygorodov-tablet@2x.webp 2x" width="183" height="200">
+                  <source type="image/webp" srcset="img/content/instructors/kaygorodov-mobile@1x.webp 1x, img/content/instructors/kaygorodov-mobile@2x.webp 2x" width="260" height="200">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/instructors/kaygorodov-desktop@1x.jpg 1x, img/content/instructors/kaygorodov-desktop@2x.jpg 2x" width="255" height="200">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/instructors/kaygorodov-tablet@1x.jpg 1x, img/content/instructors/kaygorodov-tablet@2x.jpg 2x" width="183" height="200">
+                  <img class="training__img" src="img/content/instructors/kaygorodov-mobile@1x.jpg" srcset="img/content/instructors/kaygorodov-mobile@2x.jpg 2x" width="260" height="200" alt="">
+                </picture>
+              </div>
+              <div class="training__person">
+                <h4>Федор Кайгородов</h4>
+                <!-- Для показа состояния disabled добавьте ссылке .social-link класс .is-disabled -->
+                <a class="training__social-link social-link social-link--small social-link--vk" href="#" target="_blank" rel="nofollow noopener">
+                  <span class="visually-hidden">Перейти на страницу инструктора во ВКонтакте.</span>
+                </a>
+              </div>
+              <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+            </li>
+            <li class="training__slider-item swiper-slide">
+              <div class="training__img-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/instructors/vasnetsov-desktop@1x.webp 1x, img/content/instructors/vasnetsov-desktop@2x.webp 2x" width="255" height="200">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/instructors/vasnetsov-tablet@1x.webp 1x, img/content/instructors/vasnetsov-tablet@2x.webp 2x" width="183" height="200">
+                  <source type="image/webp" srcset="img/content/instructors/vasnetsov-mobile@1x.webp 1x, img/content/instructors/vasnetsov-mobile@2x.webp 2x" width="260" height="200">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/instructors/vasnetsov-desktop@1x.jpg 1x, img/content/instructors/vasnetsov-desktop@2x.jpg 2x" width="255" height="200">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/instructors/vasnetsov-tablet@1x.jpg 1x, img/content/instructors/vasnetsov-tablet@2x.jpg 2x" width="183" height="200">
+                  <img class="training__img" src="img/content/instructors/vasnetsov-mobile@1x.jpg" srcset="img/content/instructors/vasnetsov-mobile@2x.jpg 2x" width="260" height="200" alt="">
+                </picture>
+              </div>
+              <div class="training__person">
+                <h4>Даниэль Васнецов</h4>
+                <!-- Для показа состояния disabled добавьте ссылке .social-link класс .is-disabled -->
+                <a class="training__social-link social-link social-link--small social-link--vk" href="#" target="_blank" rel="nofollow noopener">
+                  <span class="visually-hidden">Перейти на страницу инструктора во ВКонтакте.</span>
+                </a>
+              </div>
+              <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
             </li>
           </ul>
         </div>

@@ -2,8 +2,17 @@
   display: flex;
   flex-direction: column;
   max-width: 500px;
+  padding-bottom: 40px;
 
   gap: 24px;
+
+  @media (min-width: $vp-768) {
+    max-width: 820px;
+    padding-top: 24px;
+    padding-bottom: 40px;
+
+    gap: 25px;
+  }
 }
 
 .training__title {
@@ -11,13 +20,26 @@
   padding-top: 36px;
 }
 
+.training__slider-buttons {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+
+    justify-self: end;
+  }
+}
 
 .training .training__slider {
   width: 290px;
   padding-top: 5px;
 
   @media (min-width: $vp-768) {
+    display: grid;
     width: 678px;
+    padding-top: 2px;
+
+    grid-template-columns: 2fr 1fr;
   }
 
   @media (min-width: $vp-1440) {
@@ -27,6 +49,10 @@
 
 .training__img-container {
   margin-bottom: 15px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 16px;
+  }
 }
 
 .training__img {
@@ -37,12 +63,32 @@
   margin: 0;
 }
 
+.training__container br.tablet {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: block;
+  }
+
+  @media (min-width: $vp-1440) {
+    display: none;
+  }
+}
+
 .training__subtitle {
   margin: 0 0 25px;
 
   font-weight: 800;
   font-size: 22px;
   line-height: 22px;
+
+  @media (min-width: $vp-768) {
+    margin-top: 3px;
+    margin-bottom: 37px;
+
+    font-size: 25px;
+    line-height: 25px;
+  }
 }
 
 .training__slider-list {
@@ -50,13 +96,23 @@
   padding: 0;
 
   list-style-type: none;
+
+  @media (min-width: $vp-768) {
+    grid-column: 1/-1;
+  }
 }
 
 .training__slider-item {
   min-height: 356px;
   padding: 13px 15px 15px;
 
-  border: 1px solid var(--additional-20);
+  border: 1px solid var(--additional-10);
+
+  @media (min-width: $vp-768) {
+    padding: 14px;
+
+    background-color: var(--white-100);
+  }
 }
 
 .training__person {
@@ -75,6 +131,10 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $vp-768) {
+    max-width: 150px;
+  }
 }
 
 .training__slider-item p {
@@ -94,6 +154,13 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 103px;
+
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .training__process-list {
@@ -106,6 +173,12 @@
   list-style-type: none;
 
   gap: 25px;
+
+  @media (min-width: $vp-768) {
+    gap: 104px 161px;
+    grid-auto-flow: dense;;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .training__process-item {
@@ -122,12 +195,25 @@
   background-position: 29px 0;
   background-size: 25px 25px;
 
+  @media (min-width: $vp-768) {
+    padding-left: 35px;
+
+    font-size: 14px;
+    line-height: 22px;
+
+    background-position: 0 0;
+  }
+
   &--learning {
     background-image: url("../__spritemap#sprite-map-view");
   }
 
   &--preparation {
     background-image: url("../__spritemap#sprite-boots-view");
+
+    @media (min-width: $vp-768) {
+      grid-column: 1;
+    }
   }
 
   &--lectures {
@@ -136,6 +222,11 @@
 
   &--difficulties {
     background-image: url("../__spritemap#sprite-mountain-view");
+
+    @media (min-width: $vp-768) {
+      grid-column: 2;
+      grid-row: 1;
+    }
   }
 
   &::before {
@@ -149,6 +240,10 @@
 
     background-color: var(--additional-100);
     border-radius: 50%;
+
+    @media (min-width: $vp-768) {
+      display: none;
+    }
   }
 
   &:not(:last-child)::after {
@@ -161,5 +256,9 @@
     height: calc(100% + 18px);
 
     background-color: var(--additional-100);
+
+    @media (min-width: $vp-768) {
+      display: none;
+    }
   }
 }
