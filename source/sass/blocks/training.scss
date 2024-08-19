@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $vp-1440) {
-    max-width: initial;
+    max-width: 1440px;
     padding-top: 26px;
 
     gap: 32px;
@@ -186,6 +186,10 @@
   margin-bottom: 0;
 }
 
+.training__process {
+  position: relative;
+}
+
 .training__process-title {
   margin: 0 0 24px;
 
@@ -209,7 +213,7 @@
 }
 
 .training__process-list {
-  position: relative;
+
 
   display: grid;
   margin: 0;
@@ -227,10 +231,23 @@
 
   @media (min-width: $vp-1440) {
     width: 1033px;
+
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
   }
-}
+
+  &::before {
+    @media (min-width: $vp-1440) {
+      content: "";
+      position: absolute;
+      width: calc(100% - 20px);
+      left: 20px;
+      bottom: 13px;
+      background-color: var(--additional-100);
+      height: 2px;
+    }
+  }
+ }
 
 .training__process-item {
   position: relative;
@@ -255,7 +272,8 @@
     background-position: 0 0;
   }
 
-  @media (min-width: $vp-768) {
+  @media (min-width: $vp-1440) {
+    padding-bottom: 22px;
     padding-left: 45px;
 
     font-size: 16px;
@@ -313,6 +331,14 @@
     @media (min-width: $vp-768) {
       display: none;
     }
+
+    @media (min-width: $vp-1440) {
+      top: initial;
+      bottom: 7px;
+      left: 20px;
+
+      display: block;
+    }
   }
 
   &:not(:last-child)::after {
@@ -329,5 +355,11 @@
     @media (min-width: $vp-768) {
       display: none;
     }
+  }
+}
+
+.training__process-item--lectures::before {
+  @media (min-width: $vp-1440) {
+    left: 0;
   }
 }
