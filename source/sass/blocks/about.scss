@@ -5,6 +5,14 @@
 
   @media (min-width: $vp-768) {
     padding-top: 41px;
+    min-height: 742px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding-top: 126px;
+    min-height: 698px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -21,6 +29,12 @@
     max-width: 542px;
     margin: 0;
   }
+
+  @media (min-width: $vp-1440) {
+    top: 101px;
+
+    max-width: 660px;
+  }
 }
 
 .about__container {
@@ -30,8 +44,13 @@
   @media (min-width: $vp-768) {
     max-width: initial;
     margin-left: 0;
-    padding-left: 450px;
     padding-right: 48px;
+    padding-left: 450px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding-right: 120px;
+    padding-left: 660px;
   }
 
   &::before {
@@ -47,6 +66,10 @@
 
       background-color: var(--white-100, #ffffff);
     }
+
+    @media (min-width: $vp-1440) {
+      width: calc(100% - 660px);
+    }
   }
 }
 
@@ -55,6 +78,21 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 47px;
+  }
+
+  @media (min-width: $vp-1440) {
+    max-width: 585px;
+    margin-bottom: 59px;
+  }
+
+  &::before {
+    @media (min-width: $vp-768) {
+      top: 4px;
+    }
+
+    @media (min-width: $vp-1440) {
+      top: -19px;
+    }
   }
 }
 
@@ -66,13 +104,30 @@
   line-height: 16px;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 11px;
     margin-top: 29px;
+    margin-bottom: 11px;
+
     font-size: 18px;
     line-height: 18px;
+  }
+
+  @media (min-width: $vp-1440) {
+    max-width: 585px;
+    margin-top: 29px;
+    margin-bottom: 16px;
+
+    font-size: 21px;
+    line-height: 21px;
   }
 }
 
 .about p {
   margin: 10px 0;
+
+  @media (min-width: $vp-1440) {
+    max-width: 585px;
+
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
