@@ -202,12 +202,13 @@
   --swiper-pagination-bullet-horizontal-gap: 10px;
 
   @media (min-width: $vp-1440) {
-    right: 110px;
-    left: initial;
+    left: 50%;
 
     width: 350px;
 
     text-align: right;
+
+    transform: translateX(260px);
 
     --swiper-pagination-bottom: 92px;
   }
