@@ -3,12 +3,13 @@
   flex-direction: column;
   max-width: 500px;
   padding-bottom: 40px;
+  padding-top: 20px;
 
   gap: 24px;
 
   @media (min-width: $vp-768) {
     max-width: 820px;
-    padding-top: 24px;
+    padding-top: 40px;
     padding-bottom: 40px;
 
     gap: 25px;
@@ -16,7 +17,7 @@
 
   @media (min-width: $vp-1440) {
     max-width: 1440px;
-    padding-top: 26px;
+    padding-top: 42px;
 
     gap: 32px;
   }
@@ -24,18 +25,9 @@
 
 .training__title {
   margin: 0 0 9px;
-  padding-top: 36px;
 
   @media (min-width: $vp-1440) {
     margin: 0;
-  }
-
-  &::before {
-    @media (min-width: $vp-1440) {
-      top: 19px;
-
-      margin-bottom: 7px;
-    }
   }
 }
 

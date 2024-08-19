@@ -1,5 +1,5 @@
 .title {
-  padding-top: 38px;
+  padding-top: 16px;
   position: relative;
   font-weight: 800;
   font-size: 22px;
@@ -7,6 +7,7 @@
   color: var(--primary);
 
   @media (min-width: $vp-768) {
+    padding-top: 20px;
     font-size: 25px;
     line-height: 25px;
   }
@@ -19,7 +20,7 @@
   &::before {
     content: attr(data-title);
     position: absolute;
-    top: 23px;
+    top: 1px;
     left: 0;
 
     font-weight: 800;
@@ -29,11 +30,13 @@
     opacity: 0.03;
 
     @media (min-width: $vp-768) {
+      top: 5px;
       font-size: 40px;
       line-height: 40px;
     }
 
     @media (min-width: $vp-1440) {
+      top: 3px;
       font-size: 55px;
       line-height: 55px;
     }
