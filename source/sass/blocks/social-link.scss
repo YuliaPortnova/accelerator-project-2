@@ -8,6 +8,7 @@
 
   border: 1px solid var(--primary-30);
   transition: border-color 0.4s ease, background-color 0.4s ease;
+
   --icon-color: var(--primary);
 
   &--small {
@@ -45,15 +46,8 @@
   &:active {
     background-color: var(--additional-100);
     border-color: transparent;
-    --icon-color: var(--white-100);
-  }
 
-  &.is-disabled {
-    pointer-events: none;
-    background-color: transparent;
-    border-color: var(--primary);
-    --icon-color: var(--primary);
-    opacity: 0.3;
+    --icon-color: var(--white-100);
   }
 
   &::before {
@@ -67,6 +61,16 @@
     mask-position: center;
     transition: background-color 0.4s ease;
   }
+}
+
+.social-link.is-disabled {
+  pointer-events: none;
+  background-color: transparent;
+  border-color: var(--primary);
+
+  --icon-color: var(--primary);
+
+  opacity: 0.3;
 }
 
 .social-link--vk.social-link--small {

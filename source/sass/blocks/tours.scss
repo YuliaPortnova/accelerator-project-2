@@ -400,14 +400,6 @@
     --mask-color: var(--active);
   }
 
-  &.is-disabled {
-    color: var(--disabled);
-
-    pointer-events: none;
-
-    --mask-color: var(--disabled);
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -423,4 +415,12 @@
     mask-position: center;
     mask-repeat: no-repeat;
   }
+}
+
+.tours__all-link.is-disabled {
+  color: var(--disabled);
+
+  pointer-events: none;
+
+  --mask-color: var(--disabled);
 }

@@ -35,13 +35,13 @@
     background-color: var(--active);
     border-color: transparent;
   }
+}
 
-  &.is-disabled {
-    background-color: var(--disabled);
-    border-color: var(--disabled);
+.button.is-disabled {
+  background-color: var(--disabled);
+  border-color: var(--disabled);
 
-    pointer-events: none;
-  }
+  pointer-events: none;
 }
 
 @supports not selector(:focus-visible) {
