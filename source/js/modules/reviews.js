@@ -29,6 +29,7 @@ new Swiper('.reviews__container', {
       grabCursor: false,
     },
     1366: {
+      slidesPerView: 1.61,
       spaceBetween: 120,
       simulateTouch: false,
       grabCursor: false,
