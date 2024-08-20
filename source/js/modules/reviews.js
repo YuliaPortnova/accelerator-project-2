@@ -11,7 +11,6 @@ new Swiper('.reviews__container', {
   lazy: true,
   lazyPreloadPrevNext: 1,
   updateOnWindowResize: true,
-  slidesPerView: 1,
 
   navigation: {
     nextEl: '.reviews__slider-buttons .swiper-button-next',
@@ -20,10 +19,12 @@ new Swiper('.reviews__container', {
 
   breakpoints: {
     320: {
+      slidesPerView: 1,
       simulateTouch: true,
       grabCursor: true,
     },
     768: {
+      slidesPerView: 1.19,
       simulateTouch: false,
       grabCursor: false,
     },
