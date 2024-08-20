@@ -3,3 +3,4 @@ import './modules/hero.js';
 import './modules/tours.js';
 import './modules/training.js';
 import './modules/about.js';
+import './modules/reviews.js';
