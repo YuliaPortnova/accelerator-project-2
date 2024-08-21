@@ -28,7 +28,7 @@ new Swiper('.training__slider', {
       simulateTouch: false,
       grabCursor: false,
     },
-    1366: {
+    1440: {
       slidesPerView: 4,
       simulateTouch: false,
       grabCursor: false,
