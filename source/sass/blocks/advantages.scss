@@ -20,6 +20,19 @@
         background-size: 768px auto;
       }
     }
+
+    @media (min-width: $vp-1440) {
+      top: -282px;
+
+      height: 447px;
+
+      background-image: url("../img/background/clouds-advantages-desktop@1x.png");
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../img/background/clouds-advantages-desktop@2x.png");
+        background-size: 1440px auto;
+      }
+    }
   }
 }
 
@@ -28,6 +41,10 @@
 
   @media (min-width: $vp-768) {
     padding: 40px 45px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding: 115px 0 185px;
   }
 }
 
@@ -40,11 +57,19 @@
     margin-bottom: 60px;
   }
 
+  @media (min-width: $vp-1440) {
+    margin-bottom: 50px;
+  }
+
   &::before {
     top: 3px;
     left: calc(50%);
 
     transform: translateX(-50%);
+
+    @media (min-width: $vp-1440) {
+      top: -8px;
+    }
   }
 }
 
@@ -52,7 +77,13 @@
   display: none;
 
   @media (min-width: $vp-1440) {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+
     display: flex;
+
+    transform: translateX(-50%);
   }
 }
 
@@ -67,15 +98,20 @@
   gap: 15px;
 
   @media (min-width: $vp-768) {
-    max-width: initial;
-    gap: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: initial;
+
+    gap: 30px;
   }
 
   @media (min-width: $vp-1440) {
     flex-wrap: nowrap;
+    justify-content: initial;
+    margin: 0;
+
+    gap: 0;
   }
 }
 
@@ -91,6 +127,11 @@
     padding: 103px 19px 28px;
 
     background-color: var(--white-100, #ffffff);
+  }
+
+  @media (min-width: $vp-1440) {
+    min-height: 329px;
+    padding: 122px 18px 39px;
   }
 
   &--safety {
@@ -135,6 +176,13 @@
       width: 48px;
       height: 48px;
     }
+
+    @media (min-width: $vp-1440) {
+      top: 39px;
+
+      width: 54px;
+      height: 54px;
+    }
   }
 }
 
@@ -144,7 +192,15 @@
   }
 
   @media (min-width: $vp-1440) {
-    width: 100%;
+    width: 380px;
+  }
+}
+
+.advantages__item--additional.swiper-slide {
+  display: none;
+
+  @media (min-width: $vp-1440) {
+    display: block;
   }
 }
 
@@ -158,11 +214,17 @@
   text-align: center;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 14px;
     max-width: 100%;
+    margin-bottom: 14px;
 
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
@@ -185,4 +247,12 @@
 
 .advantages__item p:last-of-type {
   margin-bottom: 0;
+}
+
+.advantages__br-desktop {
+  display: none;
+
+  @media (min-width: $vp-1440) {
+    display: block;
+  }
 }

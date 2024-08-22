@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $vp-1440) {
-    padding: 126px 120px;
+    padding: 126px 120px 89px;
   }
 }
 
@@ -76,6 +76,7 @@
   }
 
   @media (min-width: $vp-1440) {
+    background-color: var(--white-100, #ffffff);
     padding: 20px 40px 30px 308px;
     min-height: 293px;
   }

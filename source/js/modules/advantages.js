@@ -18,13 +18,19 @@ const createAdvantagesSlider = () => {
     loop: true,
     lazy: true,
     lazyPreloadPrevNext: 1,
+
+
+    centeredSlides: true,
     slidesPerGroup: 2,
-    // slidesPerView: auto,
-    // centeredSlides: true,
+    initialSlide: 2,
+    // slidesPerView: 'auto',
+    slidesPerView: 3.59,
+
     // loopAdditionalSlides,
     simulateTouch: false,
     grabCursor: false,
-    loopAddBlankSlides: true,
+    // loopAddBlankSlides: true,
+    slidesPerGroupSkip: 1,
   });
 }
 
