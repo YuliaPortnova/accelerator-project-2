@@ -19,18 +19,15 @@
 }
 
 .page__container {
-  min-width: 320px;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 15px;
 
   @media (min-width: $vp-768) {
-    min-width: 768px;
     padding: 0 45px;
   }
 
   @media (min-width: $vp-1440) {
-    min-width: 1440px;
     padding: 0 120px;
   }
 }
