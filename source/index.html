@@ -571,7 +571,60 @@
         </ul>
       </div>
     </section>
-    <div data-test="gallery" id="gallery">gallery</div>
+    <section class="gallery swiper" data-test="gallery" id="gallery">
+      <div class="gallery__container page__container">
+        <h2 class="gallery__title title">Фотогалерея</h2>
+        <p>Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
+        <div class="gallery__slider-buttons slider-buttons">
+          <button class="slider-buttons__button slider-buttons__button--prev swiper-button-prev" type="button">
+            <span class="visually-hidden">Показать предыдущий слайд.</span>
+          </button>
+          <button class="slider-buttons__button slider-buttons__button--next swiper-button-next" type="button">
+            <span class="visually-hidden">Показать следующий слайд.</span>
+          </button>
+        </div>
+      </div>
+      <ul class="gallery__list swiper-wrapper">
+        <li class="gallery__item swiper-slide">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/gallery/photo-1-desktop@1x.webp 1x, img/content/gallery/photo-1-desktop@2x.webp 2x" width="284" height="463">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/gallery/photo-1-tablet@1x.webp 1x, img/content/gallery/photo-1-tablet@2x.webp 2x" width="253" height="418">
+            <source type="image/webp" srcset="img/content/gallery/photo-1-mobile@1x.webp 1x, img/content/gallery/photo-1-mobile@2x.webp 2x" width="158" height="266">
+            <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/gallery/photo-1-desktop@1x.jpg 1x, img/content/gallery/photo-1-desktop@2x.jpg 2x" width="284" height="463">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/gallery/photo-1-tablet@1x.jpg 1x, img/content/gallery/photo-1-tablet@2x.jpg 2x" width="253" height="418">
+            <img class="gallery__img" src="img/content/gallery/photo-1-mobile@1x.jpg" srcset="img/content/gallery/photo-1-mobile@2x.jpg 2x" width="158" height="266" alt="Взгляд на горы.">
+          </picture>
+        </li>
+        <li class="gallery__item swiper-slide">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/gallery/photo-2-desktop@1x.webp 1x, img/content/gallery/photo-2-desktop@2x.webp 2x" width="284" height="240">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/gallery/photo-2-tablet@1x.webp 1x, img/content/gallery/photo-2-tablet@2x.webp 2x" width="252" height="217">
+            <source type="image/webp" srcset="img/content/gallery/photo-2-mobile@1x.webp 1x, img/content/gallery/photo-2-mobile@2x.webp 2x" width="157" height="142">
+            <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/gallery/photo-2-desktop@1x.jpg 1x, img/content/gallery/photo-2-desktop@2x.jpg 2x" width="284" height="240">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/gallery/photo-2-tablet@1x.jpg 1x, img/content/gallery/photo-2-tablet@2x.jpg 2x" width="252" height="217">
+            <img class="gallery__img" src="img/content/gallery/photo-2-mobile@1x.jpg" srcset="img/content/gallery/photo-2-mobile@2x.jpg 2x" width="157" height="142" alt="У костра.">
+          </picture>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/gallery/photo-3-desktop@1x.webp 1x, img/content/gallery/photo-3-desktop@2x.webp 2x" width="284" height="223">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/gallery/photo-3-tablet@1x.webp 1x, img/content/gallery/photo-3-tablet@2x.webp 2x" width="252" height="202">
+            <source type="image/webp" srcset="img/content/gallery/photo-3-mobile@1x.webp 1x, img/content/gallery/photo-3-mobile@2x.webp 2x" width="157" height="125">
+            <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/gallery/photo-3-desktop@1x.jpg 1x, img/content/gallery/photo-3-desktop@2x.jpg 2x" width="284" height="223">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/gallery/photo-3-tablet@1x.jpg 1x, img/content/gallery/photo-3-tablet@2x.jpg 2x" width="252" height="202">
+            <img class="gallery__img" src="img/content/gallery/photo-3-mobile@1x.jpg" srcset="img/content/gallery/photo-3-mobile@2x.jpg 2x" width="157" height="125" alt="Ориентируемся по компасу.">
+          </picture>
+        </li>
+        <li class="gallery__item swiper-slide">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/gallery/photo-4-desktop@1x.webp 1x, img/content/gallery/photo-4-desktop@2x.webp 2x" width="284" height="463">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/gallery/photo-4-tablet@1x.webp 1x, img/content/gallery/photo-4-tablet@2x.webp 2x" width="253" height="418">
+            <source type="image/webp" srcset="img/content/gallery/photo-4-mobile@1x.webp 1x, img/content/gallery/photo-4-mobile@2x.webp 2x" width="158" height="266">
+            <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/gallery/photo-4-desktop@1x.jpg 1x, img/content/gallery/photo-4-desktop@2x.jpg 2x" width="284" height="463">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/gallery/photo-4-tablet@1x.jpg 1x, img/content/gallery/photo-4-tablet@2x.jpg 2x" width="253" height="418">
+            <img class="gallery__img" src="img/content/gallery/photo-4-mobile@1x.jpg" srcset="img/content/gallery/photo-4-mobile@2x.jpg 2x" width="158" height="266" alt="Восхождение со страховкой.">
+          </picture>
+        </li>
+      </ul>
+    </section>
     <div data-test="form">form</div>
   </main>
   <footer class="page-footer" data-test="footer" id="footer"></footer>
