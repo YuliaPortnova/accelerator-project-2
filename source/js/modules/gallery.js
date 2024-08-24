@@ -6,11 +6,12 @@ import 'swiper/css/pagination';
 new Swiper('.gallery', {
   modules: [Navigation],
   watchOverflow: true,
-  spaceBetween: 4,
+  spaceBetween: 5,
   speed: 600,
   lazy: true,
   lazyPreloadPrevNext: 1,
   loop: true,
+  slidesPerView: 'auto',
 
   navigation: {
     nextEl: '.gallery__slider-buttons .swiper-button-next',
@@ -19,17 +20,14 @@ new Swiper('.gallery', {
 
   breakpoints: {
     320: {
-      slidesPerView: 2,
       simulateTouch: true,
       grabCursor: true,
     },
     768: {
-      slidesPerView: 3,
       simulateTouch: true,
       grabCursor: true,
     },
     1440: {
-      slidesPerView: 5,
       simulateTouch: false,
       grabCursor: false,
     }
