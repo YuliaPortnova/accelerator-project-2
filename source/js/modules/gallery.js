@@ -12,6 +12,8 @@ new Swiper('.gallery', {
   lazyPreloadPrevNext: 1,
   loop: true,
   slidesPerView: 'auto',
+  simulateTouch: true,
+  grabCursor: true,
 
   navigation: {
     nextEl: '.gallery__slider-buttons .swiper-button-next',
@@ -19,17 +21,8 @@ new Swiper('.gallery', {
   },
 
   breakpoints: {
-    320: {
-      simulateTouch: true,
-      grabCursor: true,
-    },
-    768: {
-      simulateTouch: true,
-      grabCursor: true,
-    },
     1440: {
-      simulateTouch: false,
-      grabCursor: false,
+      enabled: false,
     }
   }
 });
