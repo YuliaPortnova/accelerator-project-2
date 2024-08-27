@@ -21,6 +21,12 @@ new Swiper('.gallery', {
   },
 
   breakpoints: {
+    320: {
+      enabled: true,
+    },
+    768: {
+      enabled: true,
+    },
     1440: {
       enabled: false,
     }
