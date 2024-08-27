@@ -663,8 +663,25 @@
         </li>
       </ul>
     </section>
-    <div data-test="form">formsdjf dhlskjfds lfjsdk fjsdkf jdsklfj skfjdsk fjdsskjfds lfjsdk fjsdkf jdsklfj skfjdsk fjdsskjfds lfjsdk fjsdkf jdsklfj skfjdsk fjdsvskjfds lfjsdk fjsdkf jdsklfj skfjdsk fjdsskjfds lfjsdk fjsdkf jdsklfj skfjdsk fjdsskjfds lfjsdk fjsdkf jdsklfj skfjdsk fjdskf dskfdsfkdhsfhds jdshfj dsfj sdgfjsdg fjdsgf jdshf
-    </div>
+    <section class="feedback" data-test="form">
+      <div class="feedback__container page__container">
+        <h2>Остались вопросы?</h2>
+        <p>Заполните форму и наш оператор свяжется<br class="feedback__br-mobile">с вами для консультации.</p>
+        <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off" novalidate>
+          <label class="form__item">
+            <span class="form__label">Телефон</span>
+            <input class="form__input form__input--phone" name="phone" type="tel" placeholder="+7 (000)-000-00-00" required>
+            <span class="form__error-message">Ошибка заполнения поля</span>
+          </label>
+          <label class="form__item">
+            <span class="form__label">Email</span>
+            <input class="form__input form__input--email" name="email" type="email" placeholder="address@mail.ru" pattern="[^a-zA-Zа-яА-Я]+$" required>
+            <span class="form__error-message">Ошибка заполнения поля</span>
+          </label>
+          <button class="form__submit-buttom button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
   </main>
   <footer class="page-footer" data-test="footer" id="footer"></footer>
   <script type="module" src="js/main.js"></script>
