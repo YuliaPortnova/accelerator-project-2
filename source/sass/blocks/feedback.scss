@@ -62,7 +62,10 @@
   gap: 18px;
 
   @media (min-width: $vp-768) {
-    gap: 25px;
+    gap: 22px;
+    padding-top: 35px;
+    padding-left: 204px;
+    padding-right: 204px;
   }
 
   @media (min-width: $vp-1440) {
@@ -109,6 +112,10 @@
 
 .feedback p:last-of-type {
   margin-bottom: 2px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 3px;
+  }
 }
 
 .feedback__br-mobile {
