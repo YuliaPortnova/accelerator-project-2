@@ -18,6 +18,10 @@
 
 .form__item {
   position: relative;
+
+  @media (min-width: $vp-1440) {
+    width: 360px;
+  }
 }
 
 .form__label {
@@ -111,4 +115,8 @@
 .form__submit-buttom {
   padding-top: 21px;
   padding-bottom: 19px;
+
+  @media (min-width: $vp-1440) {
+    width: 180px;
+  }
 }
