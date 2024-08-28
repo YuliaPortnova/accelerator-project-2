@@ -55,7 +55,7 @@
 
 .form__input {
   width: 100%;
-  padding: 17px 15px;
+  padding: 15px 15px 17px;
 
   background-color: var(--white-100, #ffffff);
   border: 1px solid var(--additional-10, rgba(2, 102, 193, 0.1));
@@ -83,6 +83,10 @@
     color: var(--disabled, #999999);
     border-color: var(--disabled, #999999);
   }
+
+  &:error {
+    border-color: var(--error, #ff121f);
+  }
 }
 
 .form__input:focus-visible::placeholder {
@@ -94,4 +98,9 @@
 
 .form__error-message {
   display: none;
+}
+
+.form__submit-buttom {
+  padding-top: 21px;
+  padding-bottom: 19px;
 }
