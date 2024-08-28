@@ -29,7 +29,7 @@
   margin: 0 0 27px;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
 
   &::before {
@@ -71,7 +71,7 @@
   margin-bottom: 31px;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: $vp-1440) {
@@ -84,8 +84,8 @@
 
   @media (min-width: $vp-768) {
     position: absolute;
-    bottom: 1px;
-    left: 89%;
+    bottom: 1.5px;
+    left: 89.05%;
 
     display: flex;
 
