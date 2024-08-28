@@ -6,3 +6,4 @@ import './modules/about.js';
 import './modules/reviews.js';
 import './modules/advantages.js';
 import './modules/gallery.js';
+import './modules/validation.js'
