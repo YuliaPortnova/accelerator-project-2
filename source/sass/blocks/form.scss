@@ -115,10 +115,11 @@
 
   .form__input--error + & {
     display: block;
-    color: var(--error, #ff121f);
+
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
+    color: var(--error, #ff121f);
   }
 }
 
@@ -127,7 +128,7 @@
   padding-bottom: 19px;
 
   @media (min-width: $vp-1440) {
-    width: 180px;
     align-self: flex-start;
+    width: 180px;
   }
 }

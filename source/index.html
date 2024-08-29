@@ -683,7 +683,40 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer" data-test="footer" id="footer"></footer>
+  <footer class="page-footer" data-test="footer" id="footer">
+    <section class="contacts">
+      <div class="contacts__container page__container">
+        <h2 class="contacts__title title" data-title="Контакты">Контакты</h2>
+        <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+        <address class="contacts__info">
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--phone">
+              <h3 class="contacts__subtitle">Телефон</h3>
+              <a class="contacts__link contacts__text" href="tel:+79837454545">+7 983 745-45-45</a>
+            </li>
+            <li class="contacts__item contacts__item--email">
+              <h3 class="contacts__subtitle">Email</h3>
+              <a class="contacts__link contacts__text" href="mailto:info@lifetour.com">info@lifetour.com</a>
+            </li>
+            <li class="contacts__item contacts__item--address">
+              <h3 class="contacts__subtitle">Адрес</h3>
+              <p class="contacts__text">г. Москва, пр-т Мира, <br class="contacts__br-mobile">д. 14, офис 101</p>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="contacts__map-wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/map/map-desktop@1x.webp 1x, img/content/map/map-desktop@2x.webp 2x" width="324" height="600">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map/map-tablet@1x.webp 1x, img/content/map/map-tablet@2x.webp 2x" width="768" height="340">
+          <source type="image/webp" srcset="img/content/map/map-mobile@1x.webp 1x, img/content/map/map-mobile@2x.webp 2x" width="320" height="343">
+          <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/content/map/map-desktop@1x.png 1x, img/content/map/map-desktop@2x.png 2x" width="324" height="600">
+          <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/map/map-tablet@1x.png 1x, img/content/map/map-tablet@2x.png 2x" width="768" height="340">
+          <img class="contacts__map" src="img/content/map/map-mobile@1x.png" srcset="img/content/map/map-mobile@2x.png 2x" width="320" height="343" alt="Наш адрес на карте: г. Москва, пр-т Мира, д. 14, офис 101. Станции метро ВДНХ или Академика Королёва.">
+        </picture>
+      </div>
+    </section>
+  </footer>
   <script type="module" src="js/main.js"></script>
 </body>
 
