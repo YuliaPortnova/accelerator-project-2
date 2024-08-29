@@ -5,13 +5,10 @@
     padding-bottom: 40px;
   }
 
-  @media (min-width: $vp-768) {
-    padding-top: 100px;
-    padding-bottom: 95px;
-  }
-
   @media (min-width: $vp-1440) {
     display: grid;
+    padding-top: 100px;
+    padding-bottom: 95px;
 
     grid-template-columns: 1fr 1fr;
   }
@@ -26,6 +23,7 @@
     max-width: 1440px;
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-right: 43px;
   }
 
   @media (min-width: $vp-1440) {
@@ -40,11 +38,24 @@
 
   &::before {
     top: 3px;
+
+    @media (min-width: $vp-768) {
+      top: 5px;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 20px;
+    padding-right: 153px;
   }
 }
 
 .contacts__container > p {
   margin: 0 0 8px;
+
+  @media (min-width: $vp-768) {
+    padding-right: 153px;
+  }
 }
 
 .contacts__container > p:last-of-type {
