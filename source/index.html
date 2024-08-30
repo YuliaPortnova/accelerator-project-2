@@ -28,7 +28,11 @@
         <span class="burger-button__line"></span>
         <span class="visually-hidden">Открыть/закрыть меню навигации.</span>
       </button>
-      <img class="page-header__logo" src="img/content/logo.svg" alt="Логотип Lifetour." width="142" height="42">
+      <a class="page-header__logo" href="index.html" aria-label="Перезагрузить страницу.">
+        <svg class="page-footer__logo-img" role="img" aria-label="Логотип Lifetour." width="142" height="42">
+          <use xlink:href="/__spritemap#sprite-logo"></use>
+        </svg>
+      </a>
       <nav class="page-header__nav">
         <ul class="page-header__nav-list">
           <li class="page-header__nav-item">
@@ -683,7 +687,7 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer" data-test="footer" id="footer">
+  <footer data-test="footer" id="footer">
     <section class="contacts">
       <div class="contacts__container page__container">
         <h2 class="contacts__title title" data-title="Контакты">Контакты</h2>
@@ -716,6 +720,54 @@
         </picture>
       </div>
     </section>
+    <div class="page-footer">
+      <div class="page-footer__container page__container">
+        <a class="page-footer__logo" href="index.html" aria-label="Перезагрузить страницу.">
+          <svg class="page-footer__logo-img" role="img" aria-label="Логотип Lifetour." width="142" height="42">
+            <use xlink:href="/__spritemap#sprite-logo"></use>
+          </svg>
+        </a>
+        <ul class="page-footer__list">
+          <li class="page-footer__nav-item">
+            <a class="page-footer__link" href="#tours">Туры</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a class="page-footerr__link" href="#training">Обучение</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a class="page-footerr__link" href="#about">О нас</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a class="page-footerr__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a class="page-footerr__link" href="#gallery">Фотографии</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a class="page-footerr__link" href="#footer">Контакты</a>
+          </li>
+        </ul>
+        <ul class="page-footer__social-list">
+          <!-- Для показа состояния disabled добавьте ссылке .social-link класс .is-disabled -->
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link social-link social-link--vk" href="#" target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Перейти на страницу Lifetour во ВКонтакте.</span>
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link social-link social-link--ok" href="#" target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Перейти на страницу Lifetour в Одноклассниках.</span>
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link social-link social-link--reddit" href="#" target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Перейти на страницу Lifetour в Реддит.</span>
+            </a>
+          </li>
+        </ul>
+        <a class="page-footer__link page-footer__privacy" href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
   </footer>
   <script type="module" src="js/main.js"></script>
 </body>
