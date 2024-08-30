@@ -1,4 +1,30 @@
+.page-footer {
+  border: 1px solid var(--primary-20, rgba(45, 56, 63, 0.2));
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 23px;
+  padding-bottom: 20px;
+
+  gap: 17px;
+
+  @media (min-width: $vp-768) {
+    padding-top: 34px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .page-footer__logo {
+  margin: 0 auto;
+
+  color: var(--primary, #2d383f);
+
   &:hover {
     color: var(--additional-10, rgba(2, 102, 193, 0.1));
   }
@@ -16,3 +42,111 @@
   }
 }
 
+.page-footer__list {
+  margin: 0 0 -8px;
+  padding: 0;
+
+  list-style-type: none;
+  column-count: 2;
+  column-gap: 50px;
+}
+
+.page-footer__item {
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.page-footer__link {
+  position: relative;
+
+  margin: 0 auto;
+  padding: 2px 5px;
+
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--primary, #2d383f);
+  text-decoration: none;
+
+  outline: 1px solid transparent;
+
+  transition: outline 0.6s ease;
+
+  @media (min-width: $vp-1440) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--primary, #2d383f);
+  }
+
+  &:active {
+    color: var(--additional-100, #0266c1);
+
+    outline: 1px solid transparent;
+  }
+
+  &--disabled {
+    color: var(--disabled, #999999);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: var(--primary, #2d383f);
+    transform: scale(0);
+
+    transition: transform 0.4s ease;
+  }
+}
+
+.page-footer__link:hover::before {
+  transform: scale(1);
+}
+
+.page-footer__link:active::before {
+  transform: scale(0);
+}
+
+.page-footer__link:focus-visible::before {
+  opacity: 0;
+}
+
+@supports not selector(:focus-visible) {
+  .page-footer__link:focus {
+    outline: 1px solid var(--white-100);
+  }
+
+  .page-footer__link:focus::before {
+    opacity: 0;
+  }
+
+  .page-footer__phone:focus {
+    color: var(--primary);
+  }
+}
+
+.page-footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 4px;
+  padding: 0;
+
+  list-style-type: none;
+
+  gap: 16px;
+}
+
+.page-footer__privacy {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+}
