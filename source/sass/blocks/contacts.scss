@@ -19,13 +19,14 @@
   max-width: 500px;
 
   @media (min-width: $vp-768) {
-    max-width: 1440px;
+    max-width: 820px;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-right: 43px;
   }
 
   @media (min-width: $vp-1440) {
+    max-width: 1440px;
     padding: 0 100px 0 0;
   }
 }

@@ -11,6 +11,10 @@
 
   --icon-color: var(--primary);
 
+  @media (min-width: $vp-1440) {
+    width: 30px;
+  }
+
   &--small {
     width: 24px;
     height: 24px;
