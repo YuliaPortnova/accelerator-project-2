@@ -42,7 +42,6 @@ const heroSlider = new Swiper('.hero', {
         button.setAttribute('tabindex', '-1');
       })
       innerButtons[heroSlider.realIndex].setAttribute('tabindex', '0');
-      console.log(heroSlider.realIndex);
     },
   },
 });
