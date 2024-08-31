@@ -3,6 +3,8 @@ const header = document.querySelector('.page-header');
 const links = header.querySelectorAll('.page-header__link');
 const menu = header.querySelector('.page-header__nav');
 
+const DESKTOP_WIDTH = 1440;
+
 const closeMenu = () => {
   document.body.setAttribute('style', 'overflow: hidden');
   header.classList.remove('is-open');
@@ -22,13 +24,13 @@ openButton.addEventListener('click', () => {
 });
 
 const onMenuFocusIn = () => {
-  if (document.body.clientWidth <= 768) {
+  if (document.body.clientWidth < DESKTOP_WIDTH) {
     openMenu();
   }
 };
 
 const onMenuFocusOut = () => {
-  if (document.body.clientWidth <= 768) {
+  if (document.body.clientWidth < DESKTOP_WIDTH) {
     closeMenu();
   }
   menu.removeEventListener('focusin', onMenuFocusIn);

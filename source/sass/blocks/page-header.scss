@@ -68,7 +68,7 @@
     padding-top: 31px;
     padding-bottom: 31px;
 
-    gap: 7px 100px;
+    gap: 7px 50px;
   }
 }
 
@@ -181,7 +181,8 @@
   @media (min-width: $vp-1440) {
     position: static;
 
-    margin-left: 60px;
+    margin-left: auto;
+    margin-right: 63px;
     padding: 21px 0 19px;
 
     transform: none;
