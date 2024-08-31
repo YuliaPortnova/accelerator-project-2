@@ -27,13 +27,13 @@ const createGallerySlider = () => {
 
 const breakpoint = window.matchMedia('(max-width: 1439px)');
 
-const onBreakpointChange = () => {
+const createOrDestroy = () => {
   if (breakpoint.matches) {
     createGallerySlider();
   } else {
     gallerySlider?.destroy();
   }
-};
+}
 
-breakpoint.addEventListener('change', onBreakpointChange);
-onBreakpointChange();
+breakpoint.addEventListener('change', () => createOrDestroy());
+createOrDestroy();
