@@ -20,14 +20,14 @@
   width: 26px;
   height: 2px;
 
-  background-color: var(--white-100);
+  background-color: var(--white-100, #ffffff);
 
   .burger-button:active & {
-    background-color: var(--active);
+    background-color: var(--active, #1c3374);
   }
 
   .burger-button:disabled & {
-    background-color: var(--disabled);
+    background-color: var(--disabled, #999999);
   }
 
   .is-open & {

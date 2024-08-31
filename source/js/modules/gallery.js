@@ -23,9 +23,9 @@ const createGallerySlider = () => {
       prevEl: '.gallery__slider-buttons .swiper-button-prev',
     },
   });
-}
+};
 
-const breakpoint = window.matchMedia("(max-width: 1439px)");
+const breakpoint = window.matchMedia('(max-width: 1439px)');
 
 const onBreakpointChange = () => {
   if (breakpoint.matches) {
@@ -35,5 +35,5 @@ const onBreakpointChange = () => {
   }
 };
 
-breakpoint.addEventListener("change", onBreakpointChange);
+breakpoint.addEventListener('change', onBreakpointChange);
 onBreakpointChange();

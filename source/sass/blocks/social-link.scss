@@ -6,10 +6,10 @@
   height: 30px;
   padding: 3px;
 
-  border: 1px solid var(--primary-30);
+  border: 1px solid var(--primary-30, rgba(45, 56, 63, 0.3));
   transition: border-color 0.4s ease, background-color 0.4s ease;
 
-  --icon-color: var(--primary);
+  --icon-color: var(--primary, #2d383f);
 
   @media (min-width: $vp-1440) {
     width: 30px;
@@ -39,7 +39,7 @@
   }
 
   &:hover {
-    border-color: var(--primary);
+    border-color: var(--primary, #2d383f);
   }
 
   &:focus-visible {
@@ -47,10 +47,10 @@
   }
 
   &:active {
-    background-color: var(--additional-100);
+    background-color: var(--additional-100, #0266c1);
     border-color: transparent;
 
-    --icon-color: var(--white-100);
+    --icon-color: var(--white-100, #ffffff);
   }
 
   &::before {
@@ -69,9 +69,9 @@
 .social-link.is-disabled {
   pointer-events: none;
   background-color: transparent;
-  border-color: var(--primary);
+  border-color: var(--primary, #2d383f);
 
-  --icon-color: var(--primary);
+  --icon-color: var(--primary, #2d383f);
 
   opacity: 0.3;
 }

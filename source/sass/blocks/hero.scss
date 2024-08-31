@@ -1,5 +1,5 @@
 .hero {
-  color: var(--white-100);
+  color: var(--white-100, #ffffff);
 
   background-color: #668eba;
 }
@@ -171,7 +171,7 @@
     font-size: 12px;
     line-height: 16px;
 
-    border: 1px solid var(--white-50);
+    border: 1px solid var(--white-50, rgba(255, 255, 255, 0.5));
 
     gap: 8px;
     grid-template-columns: 12px 1fr;
@@ -221,7 +221,7 @@
   height: 16px;
 
   background-color: transparent;
-  border: 1px solid var(--white-100);
+  border: 1px solid var(--white-100, #ffffff);
   opacity: 1;
 
   transition: background-color 0.5s ease;
@@ -236,7 +236,7 @@
   }
 
   &:active {
-    background-color: var(--white-50);
+    background-color: var(--white-50, rgba(255, 255, 255, 0.5));
   }
 
   &::before {
@@ -258,10 +258,10 @@
 }
 
 .hero .swiper-pagination-bullet:focus-visible {
-  outline: 1px solid var(--white-50);
+  outline: 1px solid var(--white-50, rgba(255, 255, 255, 0.5));
   outline-offset: 1px;
 }
 
 .hero .swiper-pagination-bullet-active {
-  background-color: var(--white-100);
+  background-color: var(--white-100, #ffffff);
 }

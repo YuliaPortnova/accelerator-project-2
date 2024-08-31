@@ -25,9 +25,9 @@ const createAdvantagesSlider = () => {
     simulateTouch: false,
     grabCursor: false,
   });
-}
+};
 
-const breakpoint = window.matchMedia("(min-width: 1440px)");
+const breakpoint = window.matchMedia('(min-width: 1440px)');
 
 const onBreakpointChange = () => {
   if (breakpoint.matches) {
@@ -37,5 +37,5 @@ const onBreakpointChange = () => {
   }
 };
 
-breakpoint.addEventListener("change", onBreakpointChange);
+breakpoint.addEventListener('change', onBreakpointChange);
 onBreakpointChange();

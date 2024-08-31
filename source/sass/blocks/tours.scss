@@ -150,7 +150,7 @@
   min-height: 416px;
   padding: 30px 20px;
 
-  color: var(--white-100);
+  color: var(--white-100, #ffffff);
 
   gap: 15px;
 }
@@ -174,7 +174,7 @@
   font-size: 12px;
   line-height: 12px;
 
-  background-color: var(--additional-100);
+  background-color: var(--additional-100, #0266c1);
 
   gap: 6px;
   grid-template-columns: 16px 1fr;
@@ -267,7 +267,7 @@
     width: 80px;
     height: 1px;
 
-    background-color: var(--white-100);
+    background-color: var(--white-100, #ffffff);
     opacity: 0.2;
   }
 }
@@ -366,12 +366,12 @@
   font-size: 14px;
   line-height: 14px;
   text-align: center;
-  color: var(--primary);
+  color: var(--primary, #2d383f);
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.04em;
 
-  --mask-color: var(--primary);
+  --mask-color: var(--primary, #2d383f);
 
   @media (min-width: $vp-768) {
     max-width: max-content;
@@ -381,21 +381,21 @@
   }
 
   &:hover {
-    color: var(--additional-10);
+    color: var(--additional-10, rgba(2, 102, 193, 0.1));
 
-    --mask-color: var(--additional-10);
+    --mask-color: var(--additional-10, rgba(2, 102, 193, 0.1));
   }
 
   &:focus-visible {
-    color: var(--additional-100);
+    color: var(--additional-100, #0266c1);
 
-    --mask-color: var(--additional-100);
+    --mask-color: var(--additional-100, #0266c1);
   }
 
   &:active {
-    color: var(--active);
+    color: var(--active, #1c3374);
 
-    --mask-color: var(--active);
+    --mask-color: var(--active, #1c3374);
   }
 
   &::before {
@@ -416,9 +416,9 @@
 }
 
 .tours__all-link.is-disabled {
-  color: var(--disabled);
+  color: var(--disabled, #999999);
 
   pointer-events: none;
 
-  --mask-color: var(--disabled);
+  --mask-color: var(--disabled, #999999);
 }

@@ -4,7 +4,7 @@
   font-weight: 800;
   font-size: 22px;
   line-height: 22px;
-  color: var(--primary);
+  color: var(--primary, #2d383f);
 
   @media (min-width: $vp-768) {
     padding-top: 20px;

@@ -162,7 +162,7 @@
 
 @supports not selector(:focus-visible) {
   .page-footer__link:focus {
-    outline: 1px solid var(--white-100);
+    outline: 1px solid var(--white-100, #ffffff);
   }
 
   .page-footer__link:focus::before {
@@ -170,7 +170,7 @@
   }
 
   .page-footer__phone:focus {
-    color: var(--primary);
+    color: var(--primary, #2d383f);
   }
 }
 

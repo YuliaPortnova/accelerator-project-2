@@ -28,7 +28,6 @@ form.addEventListener('submit', (event) => {
       input.classList.add('form__input--error');
       showMessage(input.validity.valueMissing, input);
       event.preventDefault();
-      console.log('dgh');
     }
   });
 });

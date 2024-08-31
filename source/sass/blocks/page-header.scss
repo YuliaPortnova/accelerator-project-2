@@ -2,16 +2,16 @@
   position: relative;
   z-index: 2;
 
-  color: var(--white-100);
+  color: var(--white-100, #ffffff);
 
-  background-color: var(--additional-100);
+  background-color: var(--additional-100, #0266c1);
 
   &::before {
     content: "";
     position: absolute;
     z-index: 1;
 
-    background-color: var(--additional-100);
+    background-color: var(--additional-100, #0266c1);
 
     inset: 0;
 
@@ -28,7 +28,7 @@
     width: 100vw;
     height: 100vh;
 
-    background-color: var(--primary);
+    background-color: var(--primary, #2d383f);
     transform: scale(0);
     opacity: 0;
 
@@ -129,7 +129,7 @@
 
   font-weight: 600;
   line-height: 14px;
-  color: var(--white-100);
+  color: var(--white-100, #ffffff);
   text-decoration: none;
 
   @media (min-width: $vp-768) {
@@ -169,7 +169,7 @@
 
   padding: 13px 15px 47px 10px;
 
-  background-color: var(--additional-100);
+  background-color: var(--additional-100, #0266c1);
   transform: translateY(-150%);
 
   transition: transform 0.6s ease;
@@ -228,7 +228,7 @@
 
   font-weight: 700;
   line-height: 14px;
-  color: var(--white-100);
+  color: var(--white-100, #ffffff);
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.04em;
@@ -255,7 +255,7 @@
   }
 
   &:focus-visible {
-    outline: 1px solid var(--white-100);
+    outline: 1px solid var(--white-100, #ffffff);
   }
 
   &::before {
@@ -267,7 +267,7 @@
     width: 100%;
     height: 1px;
 
-    background-color: var(--white-100);
+    background-color: var(--white-100, #ffffff);
     transform: scale(0);
 
     transition: transform 0.4s ease;
@@ -288,7 +288,7 @@
 
 @supports not selector(:focus-visible) {
   .page-header__link:focus {
-    outline: 1px solid var(--white-100);
+    outline: 1px solid var(--white-100, #ffffff);
   }
 
   .page-header__link:focus::before {
@@ -296,6 +296,6 @@
   }
 
   .page-header__phone:focus {
-    color: var(--primary);
+    color: var(--primary, #2d383f);
   }
 }
