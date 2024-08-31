@@ -3,7 +3,9 @@ import {Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-new Swiper('.hero', {
+const innerButtons = document.querySelectorAll('.hero__link');
+
+const heroSlider = new Swiper('.hero', {
   modules: [Pagination],
   pagination: {
     el: '.hero__pagination',
@@ -32,5 +34,15 @@ new Swiper('.hero', {
       simulateTouch: false,
       grabCursor: false,
     }
+  },
+
+  on: {
+    realIndexChange: () => {
+      innerButtons.forEach((button) => {
+        button.setAttribute('tabindex', '-1');
+      })
+      innerButtons[heroSlider.realIndex].setAttribute('tabindex', '0');
+      console.log(heroSlider.realIndex);
+    },
   },
 });
