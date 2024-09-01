@@ -10,7 +10,7 @@ const heroSlider = new Swiper('.hero', {
   pagination: {
     el: '.hero__pagination',
     clickable: true,
-    bulletElement: 'button type="button"',
+    bulletElement: 'button type="button" aria-label="Кнопка переключения слайдов."',
   },
   watchOverflow: true,
   spaceBetween: 40,
