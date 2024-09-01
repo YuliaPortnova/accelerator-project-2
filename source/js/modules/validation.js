@@ -3,7 +3,7 @@ const inputs = form.querySelectorAll('.form__input');
 
 const messages = {
   required: 'Обязательное поле',
-  error: 'Некорректные данные',
+  error: 'Проверьте правильность ввода данных',
 };
 
 const showMessage = (isValueMissing, element) => {

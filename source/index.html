@@ -677,12 +677,12 @@
         <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off" novalidate>
           <label class="form__item">
             <span class="form__label">Телефон</span>
-            <input class="form__input form__input--phone" name="phone" type="tel" placeholder="+7 (000)-000-00-00" pattern="[^a-zA-Zа-яА-Я]+$" required>
+            <input class="form__input form__input--phone" name="phone" type="tel" placeholder="+7 (000)-000-00-00" pattern="[^a-zA-Zа-яА-ЯЁё]+$" required>
             <span class="form__error-message">Ошибка заполнения поля</span>
           </label>
           <label class="form__item">
             <span class="form__label">Email</span>
-            <input class="form__input form__input--email" name="email" type="text" placeholder="address@mail.ru" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" required>
+            <input class="form__input form__input--email" name="email" type="text" placeholder="address@mail.ru" pattern="^[a-zA-Z0-9а-яА-Я_.+-Ёё]+@[a-zA-Z0-9а-яА-Я_.+-Ёё]+\.[a-zA-Z0-9а-яА-Я_.+-Ёё]+$" required>
             <span class="form__error-message">Ошибка заполнения поля</span>
           </label>
           <button class="form__submit-button button" type="submit">Отправить</button>
