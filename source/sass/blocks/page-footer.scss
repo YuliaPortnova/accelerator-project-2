@@ -33,6 +33,7 @@
   margin: 0 auto;
 
   color: var(--primary, #2d383f);
+  transition: color 0.4s ease;
 
   @media (min-width: $vp-768) {
     width: 142px;

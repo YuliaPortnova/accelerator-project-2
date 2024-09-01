@@ -98,6 +98,8 @@
 
   color: var(--white-100, #ffffff);
 
+  transition: color 0.4s ease;
+
   @media (min-width: $vp-768) {
     margin-left: 0;
 
@@ -182,8 +184,8 @@
   @media (min-width: $vp-1440) {
     position: static;
 
-    margin-left: auto;
     margin-right: 63px;
+    margin-left: auto;
     padding: 21px 0 19px;
 
     visibility: visible;
@@ -243,6 +245,7 @@
 
   &:active {
     color: var(--active, #1c3374);
+
     outline: 1px solid transparent;
   }
 
