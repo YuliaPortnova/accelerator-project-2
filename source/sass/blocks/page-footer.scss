@@ -11,11 +11,11 @@
   gap: 17px 36px;
 
   @media (min-width: $vp-768) {
-    max-width: 820px;
     display: grid;
-    grid-template-columns: 142px 1fr;
+    max-width: 820px;
     padding-top: 34px;
 
+    grid-template-columns: 142px 1fr;
     row-gap: 27px;
   }
 
@@ -33,6 +33,7 @@
   margin: 0 auto;
 
   color: var(--primary, #2d383f);
+
   transition: color 0.4s ease;
 
   @media (min-width: $vp-768) {
@@ -58,8 +59,9 @@
 }
 
 .page-footer__logo.is-disabled {
-  pointer-events: none;
   color: var(--disabled, #999999);
+
+  pointer-events: none;
 }
 
 .page-footer__list {
@@ -147,8 +149,9 @@
 }
 
 .page-footer__link.is-disabled {
-  pointer-events: none;
   color: var(--disabled, #999999);
+
+  pointer-events: none;
 }
 
 .page-footer__link:hover::before {
@@ -194,8 +197,9 @@
 }
 
 .page-footer__phone.is-disabled {
-  pointer-events: none;
   color: var(--disabled, #999999);
+
+  pointer-events: none;
 }
 
 .page-footer__social-list {

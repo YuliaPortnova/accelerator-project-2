@@ -105,9 +105,9 @@
 
   @media (min-width: $vp-1440) {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
 
     gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -156,5 +156,6 @@
 .gallery__slide img {
   display: block;
   width: 100%;
+
   background-color: #e8eaed;
 }

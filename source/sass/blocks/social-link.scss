@@ -7,6 +7,7 @@
   padding: 3px;
 
   border: 1px solid var(--primary-30, rgba(45, 56, 63, 0.3));
+
   transition: border-color 0.4s ease, background-color 0.4s ease;
 
   --icon-color: var(--primary, #2d383f);
@@ -21,21 +22,21 @@
   }
 
   &--vk {
-    --icon-width: 16px;
-    --icon-height: 9px;
     --icon: url("../__spritemap#sprite-social-vk-view");
+    --icon-height: 9px;
+    --icon-width: 16px;
   }
 
   &--ok {
-    --icon-width: 10px;
-    --icon-height: 16px;
     --icon: url("../__spritemap#sprite-social-ok-view");
+    --icon-height: 16px;
+    --icon-width: 10px;
   }
 
   &--reddit {
-    --icon-width: 15px;
-    --icon-height: 15px;
     --icon: url("../__spritemap#sprite-social-reddit-view");
+    --icon-height: 15px;
+    --icon-width: 15px;
   }
 
   &:hover {
@@ -58,25 +59,28 @@
 
     width: var(--icon-width);
     height: var(--icon-height);
+
     background-color: var(--icon-color);
-    mask-image: var(--icon);
-    mask-repeat: no-repeat;
-    mask-position: center;
+
     transition: background-color 0.4s ease;
+
+    mask-image: var(--icon);
+    mask-position: center;
+    mask-repeat: no-repeat;
   }
 }
 
 .social-link.is-disabled {
-  pointer-events: none;
   background-color: transparent;
   border-color: var(--primary, #2d383f);
+  opacity: 0.3;
+
+  pointer-events: none;
 
   --icon-color: var(--primary, #2d383f);
-
-  opacity: 0.3;
 }
 
 .social-link--vk.social-link--small {
-  --icon-width: 14px;
   --icon-height: 8px;
+  --icon-width: 14px;
 }

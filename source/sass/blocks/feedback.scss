@@ -62,10 +62,11 @@
   gap: 18px;
 
   @media (min-width: $vp-768) {
-    gap: 22px;
     padding-top: 35px;
-    padding-left: 204px;
     padding-right: 204px;
+    padding-left: 204px;
+
+    gap: 22px;
   }
 
   @media (min-width: $vp-1440) {

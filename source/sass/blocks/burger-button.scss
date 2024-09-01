@@ -37,11 +37,14 @@
 
 .burger-button__line:nth-child(1) {
   top: 13px;
+
   transition: transform 0.4s ease;
 
   .is-open & {
     top: 12px;
+
     width: 30px;
+
     transform: rotate(44deg);
     transform-origin: left top;
   }
@@ -49,7 +52,9 @@
 
 .burger-button__line:nth-child(2) {
   top: 21px;
+
   width: 16px;
+
   transition: transform 0.4s ease;
 
   .is-open & {
@@ -64,7 +69,9 @@
 
   .is-open & {
     top: 32px;
+
     width: 30px;
+
     transform: rotate(-44deg);
     transform-origin: left bottom;
   }

@@ -1,6 +1,8 @@
 .title {
-  padding-top: 16px;
   position: relative;
+
+  padding-top: 16px;
+
   font-weight: 800;
   font-size: 22px;
   line-height: 22px;
@@ -8,6 +10,7 @@
 
   @media (min-width: $vp-768) {
     padding-top: 20px;
+
     font-size: 25px;
     line-height: 25px;
   }
@@ -31,12 +34,14 @@
 
     @media (min-width: $vp-768) {
       top: 5px;
+
       font-size: 40px;
       line-height: 40px;
     }
 
     @media (min-width: $vp-1440) {
       top: 3px;
+
       font-size: 55px;
       line-height: 55px;
     }

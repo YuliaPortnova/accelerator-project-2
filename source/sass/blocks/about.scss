@@ -1,8 +1,8 @@
 .about {
-  overflow: hidden;
   position: relative;
 
   padding-top: 20px;
+  overflow: hidden;
 
   @media (min-width: $vp-768) {
     min-height: 742px;
