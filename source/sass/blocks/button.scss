@@ -42,12 +42,3 @@
 
   pointer-events: none;
 }
-
-@supports not selector(:focus-visible) {
-  .button:focus {
-    color: var(--active, #1c3374);
-
-    background-color: var(--white-100, #ffffff);
-    border-color: transparent;
-  }
-}
