@@ -82,12 +82,14 @@
   @media (min-width: $vp-768) {
     display: flex;
     margin-top: 20px;
+    margin-right: 1px;
 
     justify-self: end;
   }
 
   @media (min-width: $vp-1440) {
     margin-top: 17px;
+    margin-right: 1px;
   }
 }
 
