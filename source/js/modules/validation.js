@@ -2,7 +2,7 @@ const form = document.querySelector('.feedback__form');
 const inputs = form.querySelectorAll('.form__input');
 
 const messages = {
-  required: 'Это обязательное поле',
+  required: 'Обязательное поле',
   error: 'Некорректные данные',
 };
 

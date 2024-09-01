@@ -114,6 +114,11 @@
     font-size: 12px;
     line-height: 18px;
     color: var(--error, #ff121f);
+
+    @media (min-width: $vp-1440) {
+      position: absolute;
+      bottom: -15px;
+    }
   }
 }
 
