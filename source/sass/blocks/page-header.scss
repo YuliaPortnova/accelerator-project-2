@@ -170,9 +170,10 @@
   padding: 13px 15px 47px 10px;
 
   background-color: var(--additional-100, #0266c1);
-  transform: translateY(-150%);
+  visibility: hidden;
+  opacity: 0;
 
-  transition: transform 0.6s ease;
+  transition: opacity 0.6s ease;
 
   @media (min-width: $vp-768) {
     padding: 28px 40px 66px;
@@ -185,13 +186,15 @@
     margin-right: 63px;
     padding: 21px 0 19px;
 
-    transform: none;
+    visibility: visible;
+    opacity: 1;
 
     transition: none;
   }
 
   .is-open & {
-    transform: translateY(0%);
+    visibility: visible;
+    opacity: 1;
   }
 }
 

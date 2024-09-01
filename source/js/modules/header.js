@@ -1,18 +1,26 @@
 const openButton = document.querySelector('.page-header__burger-button');
 const header = document.querySelector('.page-header');
 const links = header.querySelectorAll('.page-header__link');
-const menu = header.querySelector('.page-header__nav');
+const firstTabButton = header.querySelector('.page-header__burger-button');
 
-const DESKTOP_WIDTH = 1440;
-
-const closeMenu = () => {
-  document.body.setAttribute('style', 'overflow: hidden');
-  header.classList.remove('is-open');
-};
+let onDocumentFocus;
 
 const openMenu = () => {
   header.classList.add('is-open');
+  document.body.setAttribute('style', 'overflow: hidden');
+  onDocumentFocus = (event) => {
+    if (!header.contains( event.target ) ) {
+      event.stopPropagation();
+      firstTabButton.focus();
+    }
+  };
+  document.addEventListener('focus', onDocumentFocus, true);
+};
+
+const closeMenu = () => {
   document.body.removeAttribute('style');
+  header.classList.remove('is-open');
+  document.removeEventListener('focus', onDocumentFocus, true);
 };
 
 openButton.addEventListener('click', () => {
@@ -23,27 +31,8 @@ openButton.addEventListener('click', () => {
   }
 });
 
-const onMenuFocusIn = () => {
-  if (document.body.clientWidth < DESKTOP_WIDTH) {
-    openMenu();
-  }
-};
-
-const onMenuFocusOut = () => {
-  if (document.body.clientWidth < DESKTOP_WIDTH) {
-    closeMenu();
-  }
-  menu.removeEventListener('focusin', onMenuFocusIn);
-  menu.removeEventListener('focusout', onMenuFocusOut);
-};
-
 links.forEach((link) => {
   link.addEventListener('click', () => {
-    header.classList.remove('is-open');
-    document.body.removeAttribute('style');
-  });
-  link.addEventListener('focus', () => {
-    menu.addEventListener('focusin', onMenuFocusIn);
-    menu.addEventListener('focusout', onMenuFocusOut);
+    closeMenu();
   });
 });
