@@ -216,8 +216,6 @@
   max-width: 320px;
   margin: 0 auto;
 
-  background-color: #e8eaed;
-
   @media (min-width: $vp-768) {
     max-width: 768px;
   }
@@ -230,4 +228,6 @@
 
 .contacts__map-wrapper img {
   display: block;
+
+  background-color: #e8eaed;
 }
