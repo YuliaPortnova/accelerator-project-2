@@ -104,8 +104,8 @@
   list-style-type: none;
 
   @media (min-width: $vp-1440) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 
     gap: 5px;
   }
