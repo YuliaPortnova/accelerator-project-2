@@ -35,6 +35,7 @@
 
     @media (min-width: $vp-1440) {
       top: -126px;
+
       width: 602px;
 
       background-image: url("../img/background/clouds-1-desktop@1x.png");
@@ -60,8 +61,8 @@
 }
 
 .tours .tours__slider {
-  margin-bottom: 25px;
   width: 290px;
+  margin-bottom: 25px;
 
   @media (min-width: $vp-768) {
     display: grid;
@@ -71,8 +72,8 @@
   }
 
   @media (min-width: $vp-1440) {
-    margin-bottom: 54px;
     width: 1200px;
+    margin-bottom: 54px;
   }
 }
 
@@ -120,6 +121,8 @@
 
 .tours__item {
   position: relative;
+
+  color: var(--white-100, #ffffff);
 
   background-color: #668eba;
 
