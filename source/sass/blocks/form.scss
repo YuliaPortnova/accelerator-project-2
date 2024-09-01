@@ -85,6 +85,7 @@
   }
 
   &:focus-visible {
+    outline: none;
     border-color: var(--primary, #2d383f);
   }
 
