@@ -29,7 +29,7 @@ const createAdvantagesSlider = () => {
 
 const breakpoint = window.matchMedia('(min-width: 1440px)');
 
-const onBreakpointChange = () => {
+const createOrDestroy = () => {
   if (breakpoint.matches) {
     createAdvantagesSlider();
   } else {
@@ -37,5 +37,5 @@ const onBreakpointChange = () => {
   }
 };
 
-breakpoint.addEventListener('change', onBreakpointChange);
-onBreakpointChange();
+breakpoint.addEventListener('change', () => createOrDestroy());
+createOrDestroy();
