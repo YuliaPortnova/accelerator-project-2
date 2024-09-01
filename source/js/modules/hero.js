@@ -40,7 +40,7 @@ const heroSlider = new Swiper('.hero', {
     realIndexChange: () => {
       innerButtons.forEach((button) => {
         button.setAttribute('tabindex', '-1');
-      })
+      });
       innerButtons[heroSlider.realIndex].setAttribute('tabindex', '0');
     },
   },

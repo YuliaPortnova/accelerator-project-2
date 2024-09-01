@@ -33,7 +33,7 @@ const createOrDestroy = () => {
   } else {
     gallerySlider?.destroy();
   }
-}
+};
 
 breakpoint.addEventListener('change', () => createOrDestroy());
 createOrDestroy();

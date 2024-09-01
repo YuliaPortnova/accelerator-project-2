@@ -9,7 +9,7 @@ const openMenu = () => {
   header.classList.add('is-open');
   document.body.setAttribute('style', 'overflow: hidden');
   onDocumentFocus = (event) => {
-    if (!header.contains( event.target ) ) {
+    if (!header.contains(event.target)) {
       event.stopPropagation();
       firstTabButton.focus();
     }
