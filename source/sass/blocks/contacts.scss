@@ -7,6 +7,8 @@
 
   @media (min-width: $vp-1440) {
     display: grid;
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 103px 120px 95px;
 
     grid-template-columns: 1fr 1fr;
